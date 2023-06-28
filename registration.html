@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSCC Hackathon Form</title>
+    <link rel="stylesheet" href="registration.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grandiflora+One&family=Rock+3D&display=swap" rel="stylesheet">
+    <link rel="tab icon" href="images/image-removebg-preview.png">
+</head>
+
+<body>
+    <video autoplay class="mainBackgroundVideo" muted loop>
+        <source src="images/videoplayback.mp4" type="video/mp4">
+    </video>
+    <div class="navbar">
+        <section>
+            <a href="index.html"><img src="images/image-removebg-preview.png"></a>
+            <div class="navbarOption">
+                <a href="index.html">HOME</a>
+                <a href="#">PROJECTS</a>
+                <a href="#">EVENTS</a>
+                <a href="#">TEAM</a>
+                <a href="#">RESOURCES</a>
+                <a href="registration.html">REGISTRATION</a>
+            </div>
+        </section>
+        <button>Wanna Connect</button>
+    </div>
+    <div class="registrationContainer">
+        <h1>REGISTRATION</h1>
+        <div class="registrationForm">
+            <form method="get">
+                <label for="name">
+                    <input type="text" placeholder="Name*" id="name" class="name" required>
+                </label>
+                <label for="email">
+                    <input type="text" placeholder="Email*" id="email" class="name" required>
+                </label>
+                <label for="phone">
+                    <input type="number" id="phone" class="name" placeholder="Phone Number*" required>
+                </label>
+                <label for="branch" class="branch">Branch*
+                    <select id="branchOption" name="option" required>
+                        <option value="none">None</option>
+                        <option value="cs">CS</option>
+                        <option value="ds">DS</option>
+                        <option value="ai">AI</option>
+                        <option value="ece">ECE</option>
+                        <option value="ee">EE</option>
+                        <option value="it">IT</option>
+                    </select>
+                </label>
+                <label for="branch" class="branch">Year*
+                    <select id="branchOption" name="option" required>
+                        <option value="none">None</option>
+                        <option value="cs">1st</option>
+                        <option value="ds">2nd</option>
+                        <option value="ai">3rd</option>
+                        <option value="ece">4th</option>
+                    </select>
+                </label>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

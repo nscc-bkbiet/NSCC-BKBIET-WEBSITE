@@ -16,7 +16,8 @@ body::-webkit-scrollbar {
 .mainBackgroundVideo {
     width: 100vw;
     height: 120vh;
-    filter: brightness(0.7);
+    /* filter: brightness(0.7); */
+    filter: blur(5px);
     position: fixed;
     z-index: -1;
     object-fit: cover;
@@ -36,7 +37,8 @@ body::-webkit-scrollbar {
     font-family: Arial, Helvetica, sans-serif;
     position: fixed;
     z-index: 2;
-    background-color: #070b13;
+    /* background-color: #070b13; */
+    background-color: #070b1385;
 }
 
 .navbar section {
