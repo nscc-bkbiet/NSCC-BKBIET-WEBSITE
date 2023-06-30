@@ -207,4 +207,46 @@ form button img {
     .name {
         width: 80vw;
     }
+
+    .branch {
+        width: 80vw;
+    }
+
+    form button {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 2.4rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .navbar {
+        padding-inline: 5px;
+    }
+
+    .name {
+        width: 90vw;
+    }
+
+    .branch {
+        width: 90vw;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    form button {
+        width: 90vw;
+    }
 }
