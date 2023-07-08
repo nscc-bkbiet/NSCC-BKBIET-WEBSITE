@@ -7,6 +7,7 @@
 body {
     background-color: #070b13;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
@@ -403,6 +404,10 @@ form {
     border: 1px solid #52d2ce;
     background: transparent;
     color: white;
+}
+
+form textarea {
+    resize: none;
 }
 
 form button {
