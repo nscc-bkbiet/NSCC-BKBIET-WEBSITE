@@ -15,3 +15,7 @@ window.onclick = function (event) {
         }
     }
 }
+
+// function prompt() {
+//     prompt`The message has been sent.`;
+// }
