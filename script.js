@@ -36,3 +36,11 @@ function carousel() {
   x[myIndex - 1].style.display = "block";
   setTimeout(carousel, 2000); // Change image every 2 seconds
 }
+
+document.querySelector(".sendButton").addEventListener("click", function () {
+  const contactUs = (document.querySelector(".contactMsg").textContent =
+    "Message was sent");
+  console.log(contactUs);
+});
+const name = document.querySelector(".name").value;
+const email = document.querySelector(".email").value;
