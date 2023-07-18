@@ -44,7 +44,8 @@ body::-webkit-scrollbar {
   position: fixed;
   z-index: 2;
   /* background-color: #070b13; */
-  background-color: #070b1385;
+  /* background-color: #070b1385; */
+  backdrop-filter: blur(5px);
 }
 
 .navbar section {
