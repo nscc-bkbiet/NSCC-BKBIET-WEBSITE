@@ -239,7 +239,17 @@ form button img {
   form button {
     width: 80vw;
   }
-
+  .navbar {
+    padding: 17px;
+  }
+  .navbar section img {
+    width: 30px;
+  }
+  .navbar button {
+    height: 40px;
+    width: 120px;
+    font-size: 0.71rem;
+  }
   /* Dropdown Button */
   .dropbtn {
     background-color: transparent !important;

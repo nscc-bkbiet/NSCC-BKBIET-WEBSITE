@@ -217,6 +217,17 @@ a {
   .card img {
     width: 90vw;
   }
+  .navbar {
+    padding: 17px;
+  }
+  .navbar section img {
+    width: 30px;
+  }
+  .navbar button {
+    height: 40px;
+    width: 120px;
+    font-size: 0.71rem;
+  }
 }
 @media screen and (max-width: 600px) {
   .navbar {

@@ -28,7 +28,54 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #1f4342;
 }
+/* Slider DOWN*/
+.slide {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1s ease-out;
+}
 
+.slide.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+.leftSlide {
+  position: relative;
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: all 0.4s ease-out;
+}
+
+.leftSlide.active {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.rightSlide {
+  position: relative;
+  transform: translateX(150px);
+  opacity: 0;
+  transition: all 0.4s ease-out;
+}
+
+.rightSlide.active {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.scale {
+  position: relative;
+  transform: scaleX(0);
+  opacity: 0;
+  transition: all 0.7s ease-out;
+}
+
+.scale.active {
+  transform: scaleX(1);
+  opacity: 1;
+}
+/* Slider UP */
 .mainBackgroundVideo {
   width: 100vw;
   height: 120vh;
@@ -52,8 +99,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   position: fixed;
   z-index: 2;
-  /* background-color: #070b13; */
-  /* background-color: #070b1385; */
   backdrop-filter: blur(5px);
 }
 
@@ -307,6 +352,7 @@ body {
   background-color: transparent;
   min-height: 100vh;
   padding: 100px 15px;
+  overflow-x: hidden;
 }
 
 .timeline-items {
@@ -382,7 +428,15 @@ body {
   font-weight: 300;
   line-height: 22px;
 }
-
+.upcoming {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.upcoming h3:nth-child(1) {
+  color: #eaa023;
+}
 /* responsive */
 @media (max-width: 767px) {
   .timeline-items::before {
@@ -511,7 +565,17 @@ form button img {
   .contactUs h1 {
     font-size: 5.6rem;
   }
-
+  .navbar {
+    padding: 17px;
+  }
+  .navbar section img {
+    width: 30px;
+  }
+  .navbar button {
+    height: 40px;
+    width: 120px;
+    font-size: 0.71rem;
+  }
   /* Dropdown Button */
   .dropbtn {
     background-color: transparent !important;
