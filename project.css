@@ -1,329 +1,350 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #070b13;
-    overflow-x: hidden;
+  background-color: #070b13;
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .mainBackgroundVideo {
-    width: 100vw;
-    height: 120vh;
-    /* filter: brightness(0.7); */
-    filter: blur(5px);
-    position: fixed;
-    z-index: -1;
-    object-fit: cover;
+  width: 100vw;
+  height: 120vh;
+  /* filter: brightness(0.7); */
+  filter: blur(5px);
+  position: fixed;
+  z-index: -1;
+  object-fit: cover;
 }
 
 .topArea {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
 }
 
 .navbar {
-    width: 100vw;
-    padding: 30px;
-    display: flex;
-    justify-content: space-between;
-    font-family: Arial, Helvetica, sans-serif;
-    position: fixed;
-    z-index: 2;
-    /* background-color: #070b13; */
-    background-color: #070b1385;
+  width: 100vw;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  position: fixed;
+  z-index: 2;
+  /* background-color: #070b13; */
+  background-color: #070b1385;
 }
 
 .navbar section {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .navbar section img {
-    width: 50px;
+  width: 50px;
 }
 
 .navbar section a {
-    text-decoration: none;
-    color: white;
-    padding: 10px;
-    font-size: 1rem;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  font-size: 1rem;
 }
 
 .navbar section a:hover {
-    color: #e0e0e0;
+  color: #e0e0e0;
 }
 
 .navbar button {
-    height: 50px;
-    width: 150px;
-    font-size: 1rem;
-    background-color: #719de6;
-    border-radius: 20px;
-    border: none;
-    cursor: pointer;
-    color: #1f4342;
+  height: 50px;
+  width: 150px;
+  font-size: 1rem;
+  background-color: #719de6;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  color: #1f4342;
 }
 
 .navbar button:hover {
-    background-color: #638bcb;
+  background-color: #638bcb;
 }
 
 .dropdown {
-    display: none;
+  display: none;
 }
 
 .topContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  width: 100vw;
+  margin-bottom: 40px;
 }
 
 .topContent h2 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
-    font-size: 3.5rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  font-size: 3.5rem;
 }
 
 .topContent h1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background: linear-gradient(to right, #719de6, #52d2ce, #56cad1, #719de6);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    font-size: 8rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background: linear-gradient(to right, #719de6, #52d2ce, #56cad1, #719de6);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 8rem;
 }
 
 .topContent h3 {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100;
+  font-size: 27px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
 }
-
-
-
-
-
-
-
-
-
-
-
+.card {
+  margin: 30px;
+  position: relative;
+}
+.cardContent {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.card img {
+  width: 40vw;
+}
+a {
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+}
+.card:nth-child(even) {
+  left: 0;
+}
 @media screen and (max-width: 800px) {
-    .topContent h2 {
-        font-size: 3rem
-    }
+  .topContent h2 {
+    font-size: 3rem;
+  }
 
-    .topContent h1 {
-        font-size: 6rem;
-    }
+  .topContent h1 {
+    font-size: 6rem;
+  }
 
-    .navbarOption {
-        display: none;
-    }
+  .navbarOption {
+    display: none;
+  }
 
-    .contactUs h1 {
-        font-size: 5.6rem;
-    }
+  .contactUs h1 {
+    font-size: 5.6rem;
+  }
 
-    /* Dropdown Button */
-    .dropbtn {
-        background-color: transparent !important;
-        color: white;
-        border: none;
-        cursor: pointer;
-        width: 30px;
-        display: flex;
-    }
+  /* Dropdown Button */
+  .dropbtn {
+    background-color: transparent !important;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    display: flex;
+  }
 
-    /* Dropdown button on hover & focus */
-    .dropbtn:hover,
-    .dropbtn:focus {
-        background-color: transparent;
-    }
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover,
+  .dropbtn:focus {
+    background-color: transparent;
+  }
 
-    /* The container <div> - needed to position the dropdown content */
-    .dropdown {
-        position: relative;
-        display: block;
-    }
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: block;
+  }
 
-    /* Dropdown Content (Hidden by Default) */
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f1f1f1;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-    }
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
 
-    /* Links inside the dropdown */
-    .dropdown-content a {
-        color: black;
-        padding: 20px 32px !important;
-        text-decoration: none;
-        display: block;
-    }
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 20px 32px !important;
+    text-decoration: none;
+    display: block;
+  }
 
-    /* Change color of dropdown links on hover */
-    .dropdown-content a:hover {
-        background: transparent;
-    }
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background: transparent;
+  }
 
-    /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-    .show {
-        display: block;
-        background-color: rgba(0, 0, 0, 0.401);
-        border-radius: 10px;
-        border: 1px solid white;
-    }
-
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.401);
+    border-radius: 10px;
+    border: 1px solid white;
+  }
 }
-
+@media screen and (max-width: 800px) {
+  .card img {
+    width: 90vw;
+  }
+}
 @media screen and (max-width: 600px) {
-    .topContent h2 {
-        font-size: 2.4rem
-    }
+  .navbar {
+    padding: 17px;
+  }
+  .topContent h2 {
+    font-size: 2.4rem;
+  }
 
-    .topContent h1 {
-        font-size: 4.6rem;
-    }
+  .topContent h1 {
+    font-size: 4.6rem;
+  }
 
-    .teamContainer {
-        gap: 10px;
-    }
+  .teamContainer {
+    gap: 10px;
+  }
 
-    .navbar {
-        padding: 17px;
-    }
+  .navbar {
+    padding: 17px;
+  }
 
-    .navbar section img {
-        width: 30px;
-    }
+  .navbar section img {
+    width: 30px;
+  }
 
-    .navbar button {
-        height: 40px;
-        width: 120px;
-        font-size: 0.71rem;
-    }
+  .navbar button {
+    height: 40px;
+    width: 120px;
+    font-size: 0.71rem;
+  }
 
-    .nsccAbout h1 {
-        margin-top: 100px;
-    }
+  .nsccAbout h1 {
+    margin-top: 100px;
+  }
 
-    .contactUs h1 {
-        font-size: 4.6rem;
-    }
+  .contactUs h1 {
+    font-size: 4.6rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    .topContent h2 {
-        font-size: 2.4rem
-    }
+  .topContent h2 {
+    font-size: 2.4rem;
+  }
 
-    .topContent h1 {
-        font-size: 4.6rem;
-    }
+  .topContent h1 {
+    font-size: 4.6rem;
+  }
 
-    .aboutSection {
-        width: 90vw;
-    }
+  .aboutSection {
+    width: 90vw;
+  }
 
-    .teamContainer {
-        width: 90vw;
-    }
+  .teamContainer {
+    width: 90vw;
+  }
 
-    .timeline h1 {
-        font-size: 5rem;
-    }
+  .timeline h1 {
+    font-size: 5rem;
+  }
 
-    .contactUs h1 {
-        font-size: 4.6rem;
-    }
-
+  .contactUs h1 {
+    font-size: 4.6rem;
+  }
+  a {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 470px) {
-    .topContent h2 {
-        font-size: 2rem
-    }
+  .topContent h2 {
+    font-size: 2rem;
+  }
 
-    .topContent h1 {
-        font-size: 4rem;
-    }
+  .topContent h1 {
+    font-size: 4rem;
+  }
 
-    .topContent h3 {
-        font-size: 1rem;
-    }
+  .topContent h3 {
+    font-size: 1.5rem;
+  }
 
-    .nsccAbout h1 {
-        font-size: 2rem;
-    }
+  .nsccAbout h1 {
+    font-size: 2rem;
+  }
 
-    .nsccAbout p {
-        font-size: 1rem;
-    }
+  .nsccAbout p {
+    font-size: 1rem;
+  }
 
-    .nsccTeam h1 {
-        font-size: 2rem;
-    }
+  .nsccTeam h1 {
+    font-size: 2rem;
+  }
 
-    .timeline h1 {
-        font-size: 4rem;
-    }
+  .timeline h1 {
+    font-size: 4rem;
+  }
 
-    .contactUs h1 {
-        font-size: 4rem;
-    }
+  .contactUs h1 {
+    font-size: 4rem;
+  }
 }
 
 @media screen and (max-width: 400px) {
-    .topContent h2 {
-        font-size: 1.8rem
-    }
+  .topContent h2 {
+    font-size: 1.8rem;
+  }
 
-    .topContent h1 {
-        font-size: 3rem;
-    }
+  .topContent h1 {
+    font-size: 3rem;
+  }
 
-    .topContent h3 {
-        font-size: 0.6rem;
-    }
+  .topContent h3 {
+    font-size: 1.2rem;
+  }
 
-    .timeline h1 {
-        font-size: 3.5rem;
-    }
+  .timeline h1 {
+    font-size: 3.5rem;
+  }
 
-    .contactUs h1 {
-        font-size: 3rem;
-    }
+  .contactUs h1 {
+    font-size: 3rem;
+  }
 }
 
 @media screen and (max-width: 300px) {
-    .topContent h2 {
-        font-size: 1.8rem
-    }
+  .topContent h2 {
+    font-size: 1.8rem;
+  }
 
-    .topContent h1 {
-        font-size: 2.8rem;
-    }
+  .topContent h1 {
+    font-size: 2.8rem;
+  }
 
-    .topContent h3 {
-        font-size: 0.6rem;
-    }
+  .topContent h3 {
+    font-size: 1rem;
+  }
 
-    .contactUs h1 {
-        font-size: 2.8rem;
-    }
+  .contactUs h1 {
+    font-size: 2.8rem;
+  }
 }

@@ -125,10 +125,12 @@ body::-webkit-scrollbar {
   width: 100vw;
 }
 .scrollImage img {
-  width: 90vw;
+  width: 70vw;
   display: none;
   box-shadow: 2px 4px 100px #52d2ce;
   border-radius: 10px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 .mySlides {
   display: none;

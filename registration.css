@@ -82,7 +82,7 @@ h1 {
   width: 150px;
   font-size: 1rem;
   background-color: #719de6;
-  border-radius: 20px;
+  border-radius: 10px;
   border: none;
   cursor: pointer;
   color: #1f4342;
@@ -284,6 +284,12 @@ form button img {
 @media screen and (max-width: 600px) {
   h1 {
     font-size: 3rem;
+  }
+  .navbar {
+    padding: 17px;
+  }
+  .navbar section img {
+    width: 30px;
   }
 }
 
