@@ -14,15 +14,24 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-
-body::-webkit-scrollbar {
-  display: none;
+::-webkit-scrollbar {
+  width: 6px;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #52d2ce;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1f4342;
 }
 
 .mainBackgroundVideo {
   width: 100vw;
   height: 120vh;
-  /* filter: brightness(0.7); */
   filter: blur(5px);
   position: fixed;
   z-index: -1;

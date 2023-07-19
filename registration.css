@@ -10,8 +10,19 @@ body {
   /* background: transparent; */
 }
 
-body::-webkit-scrollbar {
-  display: none;
+::-webkit-scrollbar {
+  width: 6px;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #52d2ce;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1f4342;
 }
 
 h1 {
@@ -50,8 +61,9 @@ h1 {
   display: flex;
   justify-content: space-between;
   font-family: Arial, Helvetica, sans-serif;
-  /* position: fixed; */
+  position: sticky;
   z-index: 2;
+  top: 0;
   background-color: #070b1385;
   align-items: center;
 }
@@ -104,6 +116,7 @@ h1 {
   width: 100vw;
   height: 100vh;
   justify-content: center;
+  margin-top: 40px;
 }
 
 form {
