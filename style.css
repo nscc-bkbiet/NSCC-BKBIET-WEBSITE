@@ -14,6 +14,16 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+.wbody {
+  background-color: #ffffff;
+  color: #000000;
+}
+.wnavbarOptionA {
+  border: #000000;
+}
+.wpara {
+  color: black;
+}
 ::-webkit-scrollbar {
   width: 6px;
   scroll-behavior: smooth;
@@ -103,6 +113,9 @@ body {
   z-index: -1;
   object-fit: cover;
 }
+.wmainBackgroundImage {
+  filter: opacity(1);
+}
 .topArea {
   display: flex;
   flex-direction: column;
@@ -111,7 +124,7 @@ body {
 
 .navbar {
   width: 100vw;
-  padding: 30px;
+  padding: 15px;
   display: flex;
   justify-content: space-between;
   font-family: Arial, Helvetica, sans-serif;
@@ -119,7 +132,9 @@ body {
   z-index: 2;
   backdrop-filter: blur(5px);
 }
-
+.wnavbar {
+  background-color: #0000004a;
+}
 .navbar section {
   display: flex;
   align-items: center;
@@ -150,7 +165,7 @@ body {
   display: block;
   height: 2px;
   width: 100%;
-  background-color: #52ff48;
+  background-color: #56cad1;
   transform: scaleX(0%);
   transition: transform 0.3s ease;
 }
@@ -458,6 +473,9 @@ body {
   padding: 30px;
   border-radius: 5px;
   border: 1px solid white;
+}
+.wtimeline-content {
+  border: 1px solid #eaa023;
 }
 #upcoming {
   display: flex;

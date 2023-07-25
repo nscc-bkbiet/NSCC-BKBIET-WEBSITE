@@ -16,27 +16,6 @@ window.onclick = function (event) {
   }
 };
 
-// function prompt() {
-//     prompt`The message has been sent.`;
-// }
-
-// var myIndex = 0;
-// carousel();
-
-// function carousel() {
-//   var i;
-//   var x = document.getElementsByClassName("mySlides");
-//   for (i = 0; i < x.length; i++) {
-//     x[i].style.display = "none";
-//   }
-//   myIndex++;
-//   if (myIndex > x.length) {
-//     myIndex = 1;
-//   }
-//   x[myIndex - 1].style.display = "block";
-//   setTimeout(carousel, 2000); // Change image every 2 seconds
-// }
-
 document.querySelector(".sendButton").addEventListener("click", function () {
   const contactUs = (document.querySelector(".contactMsg").textContent =
     "Message was sent");
@@ -133,4 +112,56 @@ function zoom() {
       reveals[i].classList.remove("active");
     }
   }
+}
+
+function mode() {
+  document.body.classList.toggle("wbody");
+  document.getElementById("navbar").classList.toggle("wnavbar");
+  document
+    .getElementById("mainBackgroundImage")
+    .classList.toggle("wmainBackgroundImage");
+  document
+    .getElementById("timeline-content1")
+    .classList.toggle("wtimeline-content");
+  document
+    .getElementById("timeline-content2")
+    .classList.toggle("wtimeline-content");
+  document
+    .getElementById("timeline-content3")
+    .classList.toggle("wtimeline-content");
+  document
+    .getElementById("timeline-content4")
+    .classList.toggle("wtimeline-content");
+  document
+    .getElementById("timeline-content5")
+    .classList.toggle("wtimeline-content");
+  document
+    .getElementById("timeline-content6")
+    .classList.toggle("wtimeline-content");
+  document
+    .getElementById("timeline-content7")
+    .classList.toggle("wtimeline-content");
+  document
+    .getElementById("timeline-content8")
+    .classList.toggle("wtimeline-content");
+  document
+    .getElementById("timeline-content9")
+    .classList.toggle("wtimeline-content");
+  document
+    .getElementById("timeline-content10")
+    .classList.toggle("wtimeline-content");
+  document
+    .getElementById("timeline-content11")
+    .classList.toggle("wtimeline-content");
+  document
+    .getElementById("timeline-content12")
+    .classList.toggle("wtimeline-content");
+  document
+    .getElementById("timeline-content13")
+    .classList.toggle("wtimeline-content");
+  document
+    .getElementById("timeline-content14")
+    .classList.toggle("wtimeline-content");
+
+  document.getElementById("para").classList.toggle("wpara");
 }

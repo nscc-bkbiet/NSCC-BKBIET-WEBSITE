@@ -19,19 +19,19 @@
         <!-- <video autoplay class="mainBackgroundVideo" muted loop>
             <source src="images/0719(1).mp4" type="video/mp4">
         </video> -->
-        <img class="mainBackgroundImage" src="https://wallpapers.com/images/featured/anonymous-background-ej8ru03sqbzobzmw.jpg">
-        <div class="navbar">
+        <img class="mainBackgroundImage" id="mainBackgroundImage" src="https://wallpapers.com/images/featured/anonymous-background-ej8ru03sqbzobzmw.jpg">
+        <div class="navbar" id="navbar">
             <section>
                 <img src="images/image-removebg-preview.png">
                 <div class="navbarOption">
-                    <a href="index.html">HOME</a>
-                    <a href="project.html">PROJECTS</a>
-                    <a href="#timeline">EVENTS</a>
-                    <a href="#nsccTeam">TEAM</a>
-                    <a href="#">GALLERY</a>
-                    <a href="resources.html">NSCC UPDATES</a>
-                    <a href="registration.html">REGISTRATION</a>
-                    <a href="">MODE</a>
+                    <a href="index.html" id="navbarOption1">HOME</a>
+                    <a href="project.html" id="navbarOption2">PROJECTS</a>
+                    <a href="#timeline" id="navbarOption3">EVENTS</a>
+                    <a href="#nsccTeam" id="navbarOption4">TEAM</a>
+                    <a href="gallery.html" id="navbarOption5">GALLERY</a>
+                    <a href="resources.html" id="navbarOption6">NSCC UPDATES</a>
+                    <a href="registration.html" id="navbarOption7">REGISTRATION</a>
+                    <a onclick="mode()" id="navbarOption8">MODE</a>
                 </div>
                 <div class="dropdown">
                     <img src="images/menu.png" onclick="myFunction()" class="dropbtn">
@@ -64,7 +64,7 @@
     <div class="nsccAbout">
         <section class="aboutSection">
             <h1>About NSCC BKBIET</h1>
-            <p> Welcome to the Newton School Coding Club at BK Birla Institute of Engineering and Technology, Pilani College!
+            <p id="para"> Welcome to the Newton School Coding Club at BK Birla Institute of Engineering and Technology, Pilani College!
 <br><br>
 The Newton School Coding Club is a thriving and enthusiastic community of aspiring coders and tech enthusiasts within the college. Our club is committed to fostering a deep passion for coding and technology among our members.
 <br><br>
@@ -420,7 +420,7 @@ Join us at the Newton School Coding Club and embark on an exciting journey of le
              <div class="timeline-item">
                 <div class="timeline-dot scale"></div>
                 <div class="timeline-date">14-16 and 21-23 April</div>
-                <div class="timeline-content leftSlide">
+                <div class="timeline-content leftSlide" id="timeline-content1">
                     <div class="upcoming">
                     <h3>UPCOMING</h3>
                     <h3>TechXcelerate</h3>
@@ -432,7 +432,7 @@ Join us at the Newton School Coding Club and embark on an exciting journey of le
              <div class="timeline-item">
                 <div class="timeline-dot scale"></div>
                 <div class="timeline-date">14-16 and 21-23 April</div>
-                <div class="timeline-content rightSlide">
+                <div class="timeline-content rightSlide" id="timeline-content2">
                     <div class="upcoming" id="upcoming">
                     <h3>UPCOMING</h3>
                     <h3>TechXcelerate</h3>
@@ -444,7 +444,7 @@ Join us at the Newton School Coding Club and embark on an exciting journey of le
              <div class="timeline-item">
                 <div class="timeline-dot scale"></div>
                 <div class="timeline-date">14-16 and 21-23 April</div>
-                <div class="timeline-content leftSlide">
+                <div class="timeline-content leftSlide" id="timeline-content3">
                     <div class="upcoming">
                     <h3>UPCOMING</h3>
                     <h3>TechXcelerate</h3>
@@ -456,7 +456,7 @@ Join us at the Newton School Coding Club and embark on an exciting journey of le
              <div class="timeline-item">
                 <div class="timeline-dot scale"></div>
                 <div class="timeline-date">14-16 and 21-23 April</div>
-                <div class="timeline-content rightSlide">
+                <div class="timeline-content rightSlide" id="timeline-content4">
                     <div class="upcoming" id="upcoming">
                     <h3>UPCOMING</h3>
                     <h3>TechXcelerate</h3>
@@ -469,7 +469,7 @@ Join us at the Newton School Coding Club and embark on an exciting journey of le
             <div class="timeline-item">
                 <div class="timeline-dot scale"></div>
                 <div class="timeline-date">14-16 and 21-23 April</div>
-                <div class="timeline-content leftSlide">
+                <div class="timeline-content leftSlide" id="timeline-content5">
                     <h3>TechXcelerate</h3>
                     <p>TechXcelerate, organized by NSCC BKBIET in collaboration with NSCC BPIT. </p>
                     <p>~BKBIET</p>
@@ -478,7 +478,7 @@ Join us at the Newton School Coding Club and embark on an exciting journey of le
             <div class="timeline-item">
                 <div class="timeline-dot scale"></div>
                 <div class="timeline-date">2023</div>
-                <div class="timeline-content rightSlide">
+                <div class="timeline-content rightSlide" id="timeline-content6">
                     <h3>GitHub and Open-Source Workshop</h3>
                     <p>Mr. Praveen Kumar Purushothaman</p>
                     <p>~Software Developer</p> 
@@ -487,7 +487,7 @@ Join us at the Newton School Coding Club and embark on an exciting journey of le
             <div class="timeline-item">
                 <div class="timeline-dot scale"></div>
                 <div class="timeline-date">28/01/2023</div>
-                <div class="timeline-content leftSlide">
+                <div class="timeline-content leftSlide" id="timeline-content7">
                     <h3>Newton School January CODING CONTEST</h3>
                     <p>The coding contest consists of total 6 questions with increasing difficulty levels. </p>
                     <p>~BKBIET</p>
@@ -496,7 +496,7 @@ Join us at the Newton School Coding Club and embark on an exciting journey of le
             <div class="timeline-item">
                 <div class="timeline-dot scale"></div>
                 <div class="timeline-date">27/12/2022 - 29/12/2022</div>
-                <div class="timeline-content rightSlide">
+                <div class="timeline-content rightSlide" id="timeline-content8">
                     <h3>3 Day Masterclass on DSA, CN, Competitive Programming</h3>
                     <p>Mr. Abhinav Awasti</p>
                     <p>~DSA mentor, GeeksforGeeks</p>
@@ -508,7 +508,7 @@ Join us at the Newton School Coding Club and embark on an exciting journey of le
             <div class="timeline-item">
                 <div class="timeline-dot scale"></div>
                 <div class="timeline-date">11/11/2022</div>
-                <div class="timeline-content leftSlide">
+                <div class="timeline-content leftSlide" id="timeline-content9">
                     <h3>NSCC Orientation</h3>
                     <p>Dr. S M Prasanna Kumar</p>
                     <p>~Director, BKBIET</p>
@@ -517,7 +517,7 @@ Join us at the Newton School Coding Club and embark on an exciting journey of le
             <div class="timeline-item">
                 <div class="timeline-dot scale"></div>
                 <div class="timeline-date">27/10/2022</div>
-                <div class="timeline-content rightSlide">
+                <div class="timeline-content rightSlide" id="timeline-content10">
                     <h3>Newton School October Coding Contest</h3>
                     <p>Dr. Nimish Kumar</p>
                     <p>Dr. Vipin Saraogi</p>
@@ -527,7 +527,7 @@ Join us at the Newton School Coding Club and embark on an exciting journey of le
             <div class="timeline-item">
                 <div class="timeline-dot scale"></div>
                 <div class="timeline-date">28/09/2022</div>
-                <div class="timeline-content leftSlide">
+                <div class="timeline-content leftSlide" id="timeline-content11">
                     <h3>Newton School September Coding Contest</h3>
                     <p>Dr. Nimish Kumar</p>
                     <p>Dr. Vipin Saraogi</p>
@@ -537,7 +537,7 @@ Join us at the Newton School Coding Club and embark on an exciting journey of le
             <div class="timeline-item">
                 <div class="timeline-dot scale"></div>
                 <div class="timeline-date">25/09/2022</div>
-                <div class="timeline-content rightSlide">
+                <div class="timeline-content rightSlide" id="timeline-content12">
                     <h3>How to grab Internship Opportunities
                         (Webinar)</h3>
                     <p>Mr. Prajjwal Singh</p>
@@ -547,7 +547,7 @@ Join us at the Newton School Coding Club and embark on an exciting journey of le
             <div class="timeline-item">
                 <div class="timeline-dot scale"></div>
                 <div class="timeline-date">31/08/2022</div>
-                <div class="timeline-content leftSlide">
+                <div class="timeline-content leftSlide" id="timeline-content13">
                     <h3> Newton School AUGUST CODING CONTEST</h3>
                     <p>The coding contest consists of total 6 questions with increasing difficulty levels.</p>
                     <p>~BKBIET</p>
@@ -556,7 +556,7 @@ Join us at the Newton School Coding Club and embark on an exciting journey of le
             <div class="timeline-item">
                 <div class="timeline-dot scale"></div>
                 <div class="timeline-date">20 June 2022</div>
-                <div class="timeline-content rightSlide">
+                <div class="timeline-content rightSlide" id="timeline-content14">
                     <h3>Starting Date of NSCC BKBIET.</h3>
                     <p>Utkarsh Payal</p>
                     <p>Founder</p>
