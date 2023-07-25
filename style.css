@@ -51,6 +51,17 @@ body {
   transform: translateX(0px);
   opacity: 1;
 }
+.zoom {
+  position: relative;
+  transform: scale(0);
+  opacity: 0;
+  transition: all 0.4s ease-out;
+}
+
+.zoom.active {
+  transform: scale(100%);
+  opacity: 1;
+}
 
 .rightSlide {
   position: relative;
@@ -76,15 +87,22 @@ body {
   opacity: 1;
 }
 /* Slider UP */
-.mainBackgroundVideo {
+/* .mainBackgroundVideo {
   width: 100vw;
   height: 120vh;
   filter: blur(5px);
   position: fixed;
   z-index: -1;
   object-fit: cover;
+} */
+.mainBackgroundImage {
+  width: 100vw;
+  height: 100vh;
+  filter: opacity(0.6);
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
 }
-
 .topArea {
   display: flex;
   flex-direction: column;
@@ -122,7 +140,23 @@ body {
 .navbar section a:hover {
   color: #e0e0e0;
 }
-
+.navbarOption {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.navbarOption a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #52ff48;
+  transform: scaleX(0%);
+  transition: transform 0.3s ease;
+}
+.navbarOption a:hover::after {
+  transform: scaleX(100%);
+}
 .navbar button {
   height: 50px;
   width: 150px;
@@ -149,7 +183,12 @@ body {
   align-items: center;
   height: 90vh;
 }
-
+.topContent img {
+  width: 100vw;
+  position: absolute;
+  filter: opacity(0.4);
+  z-index: -1;
+}
 .topContent h2 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: white;
@@ -246,21 +285,28 @@ body {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
-
 .teamContainer {
-  width: 80vw;
+  width: 95vw;
   display: flex;
   overflow-y: auto;
   scroll-behavior: smooth;
-  gap: 100px;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
+.team {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .teamContainer::-webkit-scrollbar {
   display: none;
 }
 
 .teamContainer .card {
-  width: 250px;
+  /* width: 250px; */
   height: 45 0px;
   background-color: #000000;
   color: white;
@@ -413,7 +459,10 @@ body {
   border-radius: 5px;
   border: 1px solid white;
 }
-
+#upcoming {
+  display: flex;
+  flex-direction: row-reverse;
+}
 .timeline-content h3 {
   font-size: 20px;
   color: #719de6;
@@ -442,7 +491,9 @@ body {
   .timeline-items::before {
     left: 7px;
   }
-
+  #upcoming {
+    flex-direction: row;
+  }
   .timeline-item:nth-child(odd) {
     padding-right: 0;
     text-align: left;
@@ -548,33 +599,20 @@ form button:hover {
 form button img {
   width: 20px;
 }
-
-@media screen and (max-width: 800px) {
-  .topContent h2 {
-    font-size: 3rem;
-  }
-
-  .topContent h1 {
-    font-size: 6rem;
-  }
-
+@media screen and (max-width: 1000px) {
   .navbarOption {
     display: none;
   }
-
-  .contactUs h1 {
-    font-size: 5.6rem;
-  }
   .navbar {
     padding: 17px;
-  }
-  .navbar section img {
-    width: 30px;
   }
   .navbar button {
     height: 40px;
     width: 120px;
     font-size: 0.71rem;
+  }
+  .navbar section img {
+    width: 30px;
   }
   /* Dropdown Button */
   .dropbtn {
@@ -629,6 +667,35 @@ form button img {
     border: 1px solid white;
   }
 }
+@media screen and (max-width: 800px) {
+  .topContent h2 {
+    font-size: 3rem;
+  }
+
+  .topContent h1 {
+    font-size: 6rem;
+  }
+
+  .navbarOption {
+    display: none;
+  }
+
+  .contactUs h1 {
+    font-size: 5.6rem;
+  }
+  .navbar {
+    padding: 17px;
+  }
+  .navbar section img {
+    width: 30px;
+  }
+  .navbar button {
+    height: 40px;
+    width: 120px;
+    font-size: 0.71rem;
+  }
+  /* Dropdown Button */
+}
 
 @media screen and (max-width: 600px) {
   .topContent h2 {
@@ -663,6 +730,18 @@ form button img {
 
   .contactUs h1 {
     font-size: 4.6rem;
+  }
+  .name {
+    width: 80vw;
+  }
+  .email {
+    width: 80vw;
+  }
+  .message {
+    width: 80vw;
+  }
+  form button {
+    width: 80vw;
   }
 }
 

@@ -20,22 +20,22 @@ window.onclick = function (event) {
 //     prompt`The message has been sent.`;
 // }
 
-var myIndex = 0;
-carousel();
+// var myIndex = 0;
+// carousel();
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  myIndex++;
-  if (myIndex > x.length) {
-    myIndex = 1;
-  }
-  x[myIndex - 1].style.display = "block";
-  setTimeout(carousel, 2000); // Change image every 2 seconds
-}
+// function carousel() {
+//   var i;
+//   var x = document.getElementsByClassName("mySlides");
+//   for (i = 0; i < x.length; i++) {
+//     x[i].style.display = "none";
+//   }
+//   myIndex++;
+//   if (myIndex > x.length) {
+//     myIndex = 1;
+//   }
+//   x[myIndex - 1].style.display = "block";
+//   setTimeout(carousel, 2000); // Change image every 2 seconds
+// }
 
 document.querySelector(".sendButton").addEventListener("click", function () {
   const contactUs = (document.querySelector(".contactMsg").textContent =
@@ -103,6 +103,24 @@ window.addEventListener("scroll", scale);
 
 function scale() {
   var reveals = document.querySelectorAll(".scale");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowheight = window.innerHeight;
+    var revealtop = reveals[i].getBoundingClientRect().top;
+    var revealpoint = 200;
+
+    if (revealtop < windowheight - revealpoint) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", zoom);
+
+function zoom() {
+  var reveals = document.querySelectorAll(".zoom");
 
   for (var i = 0; i < reveals.length; i++) {
     var windowheight = window.innerHeight;
