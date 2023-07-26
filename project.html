@@ -10,10 +10,7 @@
 
   <body>
     <div class="topArea">
-      <!-- <video autoplay class="mainBackgroundVideo" muted loop>
-        <source src="images/0719(1).mp4" type="video/mp4" />
-      </video> -->
-      <div class="navbar">
+      <div class="navbar" id="navbar">
         <section>
           <img src="images/image-removebg-preview.png" />
           <div class="navbarOption">
@@ -21,9 +18,10 @@
             <a href="project.html">PROJECTS</a>
             <a href="index.html">EVENTS</a>
             <a href="index.html">TEAM</a>
-            <a href="#">GALLERY</a>
+            <a href="gallery.html">GALLERY</a>
             <a href="resources.html">NSCC UPDATES</a>
             <a href="registration.html">REGISTRATION</a>
+            <a onclick="projectmode()" id="navbarOption8">MODE</a>
           </div>
           <div class="dropdown">
             <img src="images/menu.png" onclick="myFunction()" class="dropbtn" />
@@ -32,47 +30,70 @@
               <a href="project.html">PROJECTS</a>
               <a href="index.html">EVENTS</a>
               <a href="index.html">TEAM</a>
-              <a href="#">GALLERY</a>
+              <a href="gallery.html">GALLERY</a>
               <a href="resources.html">NSCC UPDATES</a>
               <a href="registration.html">REGISTRATION</a>
+              <a onclick="projectmode()" id="navbarOption8">MODE</a>
             </div>
           </div>
         </section>
         <a href="index.html"><button>Connect</button></a>
       </div>
       <div class="topContent">
-        <!-- <h2>PAGE UNDER</h2>
-            <h1>CONSTRUCTION</h1> -->
+        <h1 class="mainHeading" id="mainHeading">
+          "Explore, Create, Innovate: Embark on Coding Adventures"
+        </h1>
         <div class="card">
-          <img src="images/Farzi.png" />
+          <!-- <img src="images/Farzi.png" /> -->
           <span class="cardContent">
-            <h3>Farzi Detail</h3>
-            <a href="#">LINK</a>
+            <h2 id="heading1" class="heading">
+              Machine Learning for Image Recognition
+            </h2>
+            <h3 class="description" id="description">Description:</h3>
+            <p class="para" id="descriptionPara">
+              Develop a machine learning model using Python and libraries like
+              TensorFlow or Keras to recognize objects in images. Use datasets
+              like CIFAR-10 or ImageNet to train the model and test its
+              accuracy. Build a user-friendly interface to upload images and
+              demonstrate the model's predictions.
+            </p>
+            <h3 class="Prerequisites" id="Prerequisites">Prerequisites:</h3>
+            <p class="para" id="PrerequisitesPara">
+              Basic knowledge of Python programming and machine learning
+              concepts.
+            </p>
+            <h3 class="skills" id="skills">Skills Gained:</h3>
+            <p class="para" id="skills">
+              Understanding of machine learning algorithms and neural networks.
+              Image data preprocessing and model training. Implementing image
+              recognition applications.
+            </p>
+            <button type="submit" class="submit" id="submit">Submit</button>
           </span>
         </div>
         <div class="card">
           <img src="images/Farzi.png" />
           <span class="cardContent">
-            <h3>Farzi Detail</h3>
-            <a href="#">LINK</a>
+            <h3 id="heading2" class="heading">Farzi Detail</h3>
+            <a href="#" id="subheading2">LINK</a>
           </span>
         </div>
         <div class="card">
           <img src="images/Farzi.png" />
           <span class="cardContent">
-            <h3>Farzi Detail</h3>
-            <a href="#">LINK</a>
+            <h3 id="heading3" class="heading">Farzi Detail</h3>
+            <a href="#" id="subheading3">LINK</a>
           </span>
         </div>
         <div class="card">
           <img src="images/Farzi.png" />
           <span class="cardContent">
-            <h3>Farzi Detail</h3>
-            <a href="#">LINK</a>
+            <h3 id="heading4" class="heading">Farzi Detail</h3>
+            <a href="#" id="subheading4">LINK</a>
           </span>
         </div>
       </div>
-      <a href="#">Know More</a>
+      <a href="#" class="knowMore" id="knowMore">Know More</a>
     </div>
     <script src="project.js"></script>
   </body>

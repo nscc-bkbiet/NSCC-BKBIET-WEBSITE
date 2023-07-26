@@ -16,9 +16,6 @@
 </head>
 <body>
     <div class="topArea">
-        <!-- <video autoplay class="mainBackgroundVideo" muted loop>
-            <source src="images/0719(1).mp4" type="video/mp4">
-        </video> -->
         <img class="mainBackgroundImage" id="mainBackgroundImage" src="https://wallpapers.com/images/featured/anonymous-background-ej8ru03sqbzobzmw.jpg">
         <div class="navbar" id="navbar">
             <section>
@@ -40,16 +37,16 @@
                         <a href="project.html">PROJECTS</a>
                         <a href="#timeline">EVENTS</a>
                         <a href="#nsccTeam">TEAM</a>
-                        <a href="#">GALLERY</a>
+                        <a href="gallery.html">GALLERY</a>
                         <a href="resources.html">NSCC UPDATES</a>
                         <a href="registration.html">REGISTRATION</a>
+                        <a onclick="mode()" id="navbarOption8">MODE</a>
                     </div>
                 </div>
             </section>
             <a href="#contactUs"><button>Connect</button></a>
         </div>
         <div class="topContent">
-            <!-- <img src="https://img.freepik.com/premium-photo/desktop-source-code-wallpaper-by-computer-language-with-coding-programming_33771-595.jpg?w=2000" alt=""> -->
             <h2>Newton School</h2>
             <h1>CODING CLUB</h1>
             <h3>B K Birla Institute of Engineering and Technology</h3>
@@ -80,13 +77,13 @@ Join us at the Newton School Coding Club and embark on an exciting journey of le
         <h1>Meet The TEAM</h1>
         <div class="teamContainer">
             <div class="team">
-            <div class="card zoom">
+            <div class="card zoom" id="card1">
                 <div class="cardImage">
                     <img src="images/UP.jpg" alt="">
                 </div>
                 <div class="cardDetails">
-                    <p>Utkarsh Payal</p>
-                    <h2>FOUNDER</h2>
+                    <p id="cardName1">Utkarsh Payal</p>
+                    <h2 id="cardPost1">FOUNDER</h2>
                 </div>
                 <div class="cardContent">
                     <a href="https://www.instagram.com/_anonymous_utk/"><img src="images/instagram.png" alt=""></a>
@@ -100,8 +97,8 @@ Join us at the Newton School Coding Club and embark on an exciting journey of le
                     <img src="images/MA.jpg" alt="">
                 </div>
                 <div class="cardDetails">
-                    <p>Manjeet Aggarwal</p>
-                    <h2>CO-FOUNDER</h2>
+                    <p id="cardName2">Manjeet Aggarwal</p>
+                    <h2 id="cardPost2">CO-FOUNDER</h2>
                 </div>
                 <div class="cardContent">
                     <a href="https://www.instagram.com/__manjeet.in/"><img src="images/instagram.png" alt=""></a>
@@ -115,8 +112,8 @@ Join us at the Newton School Coding Club and embark on an exciting journey of le
                     <img src="images/Ankit Kulhari.jpg" alt="">
                 </div>
                 <div class="cardDetails">
-                    <p>Ankit Kulhari</p>
-                    <h2>PRESIDENT</h2>
+                    <p id="cardName3">Ankit Kulhari</p>
+                    <h2 id="cardPost3">PRESIDENT</h2>
                 </div>
                 <div class="cardContent">
                     <a href="https://www.instagram.com/ankit.kulhari_/"><img src="images/instagram.png" alt=""></a>
@@ -132,8 +129,8 @@ Join us at the Newton School Coding Club and embark on an exciting journey of le
                     <img src="images/Sneha vyas.jpg" alt="">
                 </div>
                 <div class="cardDetails">
-                    <p>Sneha Vyas</p>
-                    <h2>VICE PRESIDENT</h2>
+                    <p id="cardName4">Sneha Vyas</p>
+                    <h2 id="cardPost4">VICE PRESIDENT</h2>
                 </div>
                 <div class="cardContent">
                     <a href="#"><img src="images/instagram.png" alt=""></a>
@@ -147,8 +144,8 @@ Join us at the Newton School Coding Club and embark on an exciting journey of le
                     <img src="images/SnehaSingh.jpg" alt="">
                 </div>
                 <div class="cardDetails">
-                    <p>Sneha Singh</p>
-                    <h2>VICE PRESIDENT</h2>
+                    <p id="cardName5">Sneha Singh</p>
+                    <h2 id="cardPost5">VICE PRESIDENT</h2>
                 </div>
                 <div class="cardContent">
                     <a href="https://instagram.com/_sneha_singh4304?igshid=MzNlNGNkZWQ4Mg=="><img
@@ -164,8 +161,8 @@ Join us at the Newton School Coding Club and embark on an exciting journey of le
                     <img src="images/Aditya malik.jpeg" alt="">
                 </div>
                 <div class="cardDetails">
-                    <p>Aditya Malik</p>
-                    <h2>TECH HEAD</h2>
+                    <p id="cardName6">Aditya Malik</p>
+                    <h2 id="cardPost6">TECH HEAD</h2>
                 </div>
                 <div class="cardContent">
                     <a href="#"><img src="images/instagram.png" alt=""></a>
@@ -181,8 +178,8 @@ Join us at the Newton School Coding Club and embark on an exciting journey of le
                     <img src="images/111111.jpg" alt="">
                 </div>
                 <div class="cardDetails">
-                    <p>Rohan</p>
-                    <h2>CO-TECH HEAD</h2>
+                    <p id="cardName21">Rohan Chaudhary</p>
+                    <h2 id="cardPost21">CO-TECH HEAD</h2>
                 </div>
                 <div class="cardContent">
                     <a href="https://www.instagram.com/rohan_chaudharygadda/"><img src="images/instagram.png"
@@ -193,13 +190,13 @@ Join us at the Newton School Coding Club and embark on an exciting journey of le
                     <a href="https://github.com/Codesamp-Rohan"><img src="images/github.png" alt=""></a>
                 </div>
             </div>
-            <div class="card zoom">
+            <div class="card zoom" id="card2">
                 <div class="cardImage">
                     <img src="images/Snapchat-535468489.jpg" alt="">
                 </div>
                 <div class="cardDetails">
-                    <p>Yashasvi</p>
-                    <h2>HEAD COORDINATOR</h2>
+                    <p id="cardName7">Yashasvi</p>
+                    <h2 id="cardPost7">HEAD COORDINATOR</h2>
                 </div>
                 <div class="cardContent">
                     <a href="#"><img src="images/instagram.png" alt=""></a>
@@ -208,13 +205,13 @@ Join us at the Newton School Coding Club and embark on an exciting journey of le
                     <a href="#"><img src="images/github.png" alt=""></a>
                 </div>
             </div>
-            <div class="card zoom">
+            <div class="card zoom" id="card3">
                 <div class="cardImage">
                     <img src="images/Raunak Kumar.jpg" alt="">
                 </div>
                 <div class="cardDetails">
-                    <p>Raunak Kumar</p>
-                    <h2>COORDINATOR</h2>
+                    <p id="cardName8">Raunak Kumar</p>
+                    <h2 id="cardPost8">COORDINATOR</h2>
                 </div>
                 <div class="cardContent">
                     <a href="https://instagram.com/raunak_bhati_rj18?igshid=NTc4MTIwNjQ2YQ=="><img
@@ -227,13 +224,13 @@ Join us at the Newton School Coding Club and embark on an exciting journey of le
             </div>
             </div>
             <div class="team">
-            <div class="card zoom">
+            <div class="card zoom" id="card4">
                 <div class="cardImage">
                     <img src="images/Aditya Sharma.jpg" alt="">
                 </div>
                 <div class="cardDetails">
-                    <p>Aditya Sharma</p>
-                    <h2>PR HEAD</h2>
+                    <p id="cardName9">Aditya Sharma</p>
+                    <h2 id="cardPost9">PR HEAD</h2>
                 </div>
                 <div class="cardContent">
                     <a href="#"><img src="images/instagram.png" alt=""></a>
@@ -242,13 +239,13 @@ Join us at the Newton School Coding Club and embark on an exciting journey of le
                     <a href="#"><img src="images/github.png" alt=""></a>
                 </div>
             </div>
-            <div class="card zoom">
+            <div class="card zoom" id="card5">
                 <div class="cardImage">
                     <img src="images/Anushka Sanadhya.jpg" alt="">
                 </div>
                 <div class="cardDetails">
-                    <p>Anushka Sanadhya</p>
-                    <h2>PR MANAGER</h2>
+                    <p id="cardName10">Anushka Sanadhya</p>
+                    <h2 id="cardPost10">PR MANAGER</h2>
                 </div>
                 <div class="cardContent">
                     <a href="https://instagram.com/anushka_sanadhya_?igshid=MzNlNGNkZWQ4Mg=="><img
@@ -259,13 +256,13 @@ Join us at the Newton School Coding Club and embark on an exciting journey of le
                     <a href="#"><img src="images/github.png" alt=""></a>
                 </div>
             </div>
-            <div class="card zoom">
+            <div class="card zoom" id="card6">
                 <div class="cardImage">
                     <img src="images/Thanos.jpg" alt="">
                 </div>
                 <div class="cardDetails">
-                    <p>Nitin Jangir</p>
-                    <h2>GRAPHIC DESIGNER</h2>
+                    <p id="cardName11">Nitin Jangir</p>
+                    <h2 id="cardPost11">GRAPHIC DESIGNER</h2>
                 </div>
                 <div class="cardContent">
                     <a href="https://www.instagram.com/n_jangir_15/"><img src="images/instagram.png" alt=""></a>
@@ -277,13 +274,13 @@ Join us at the Newton School Coding Club and embark on an exciting journey of le
             </div>
             </div>
             <div class="team">
-            <div class="card zoom">
+            <div class="card zoom" id="card7">
                 <div class="cardImage">
                     <img src="images/Mayur.jpg" alt="">
                 </div>
                 <div class="cardDetails">
-                    <p>Mayur Sharma</p>
-                    <h2>GRAPHIC DESIGNER</h2>
+                    <p id="cardName12">Mayur Sharma</p>
+                    <h2 id="cardPost12">GRAPHIC DESIGNER</h2>
                 </div>
                 <div class="cardContent">
                     <a href="#"><img src="images/instagram.png" alt=""></a>
@@ -292,13 +289,13 @@ Join us at the Newton School Coding Club and embark on an exciting journey of le
                     <a href="#"><img src="images/github.png" alt=""></a>
                 </div>
             </div>
-            <div class="card zoom">
+            <div class="card zoom" id="card8">
                 <div class="cardImage">
                     <img src="images/WhatsApp Image 2023-06-23 at 12.26.12.jpg" alt="">
                 </div>
                 <div class="cardDetails">
-                    <p>Pushpendra Sharma</p>
-                    <h2>DESIGNER</h2>
+                    <p id="cardName13">Pushpendra Sharma</p>
+                    <h2 id="cardPost13">DESIGNER</h2>
                 </div>
                 <div class="cardContent">
                     <a href="https://www.instagram.com/pushpendra_sharma10/"><img src="images/instagram.png" alt=""></a>
@@ -307,13 +304,13 @@ Join us at the Newton School Coding Club and embark on an exciting journey of le
                     <a href="https://github.com/pushpendra010"><img src="images/github.png" alt=""></a>
                 </div>
             </div>
-            <div class="card zoom">
+            <div class="card zoom" id="card9">
                 <div class="cardImage">
                     <img src="images/Naveen Kumar.jpg" alt="">
                 </div>
                 <div class="cardDetails">
-                    <p>Naveen Kumar</p>
-                    <h2>EVENT MANAGER</h2>
+                    <p id="cardName14">Naveen Kumar</p>
+                    <h2 id="cardPost14">EVENT MANAGER</h2>
                 </div>
                 <div class="cardContent">
                     <a href="https://instagram.com/kumar_naveen_0008?igshid=MzNlNGNkZWQ4Mg=="><img
@@ -325,13 +322,13 @@ Join us at the Newton School Coding Club and embark on an exciting journey of le
             </div>
             </div>
             <div class="team">
-            <div class="card zoom">
+            <div class="card zoom" id="card10">
                 <div class="cardImage">
                     <img src="images/Nakul1.jpg" alt="">
                 </div>
                 <div class="cardDetails">
-                    <p>Nakul Shekhawat</p>
-                    <h2>EVENT MANAGER</h2>
+                    <p id="cardName15">Nakul Shekhawat</p>
+                    <h2 id="cardPost15">EVENT MANAGER</h2>
                 </div>
                 <div class="cardContent">
                     <a href="https://instagram.com/_.nakulll._44?igshid=MzNlNGNkZWQ4Mg=="><img
@@ -341,13 +338,13 @@ Join us at the Newton School Coding Club and embark on an exciting journey of le
                     <a href="#"><img src="images/github.png" alt=""></a>
                 </div>
             </div>
-            <div class="card zoom">
+            <div class="card zoom" id="card11">
                 <div class="cardImage">
                     <img src="images/Preeti.jpg" alt="">
                 </div>
                 <div class="cardDetails">
-                    <p>Preeti</p>
-                    <h2>CONTENT WRITER</h2>
+                    <p id="cardName16">Preeti</p>
+                    <h2 id="cardPost16">CONTENT WRITER</h2>
                 </div>
                 <div class="cardContent">
                     <a href="#"><img src="images/instagram.png" alt=""></a>
@@ -357,13 +354,13 @@ Join us at the Newton School Coding Club and embark on an exciting journey of le
                     <a href="#"><img src="images/github.png" alt=""></a>
                 </div>
             </div>
-            <div class="card zoom">
+            <div class="card zoom" id="card12">
                 <div class="cardImage">
                     <img src="images/WhatsApp Image 2023-06-23 at 09.52.29.jpg" alt="">
                 </div>
                 <div class="cardDetails">
-                    <p>Suryaansh Singh</p>
-                    <h2>CONTENT WRITER</h2>
+                    <p id="cardName17">Suryaansh Singh</p>
+                    <h2 id="cardPost17">CONTENT WRITER</h2>
                 </div>
                 <div class="cardContent">
                     <a href="https://www.instagram.com/ssuryaansh/"><img src="images/instagram.png" alt=""></a>
@@ -374,13 +371,13 @@ Join us at the Newton School Coding Club and embark on an exciting journey of le
             </div>
             </div>
             <div class="team">
-            <div class="card zoom">
+            <div class="card zoom" id="card13">
                 <div class="cardImage">
                     <img src="images/kumkum saini.jpg" alt="">
                 </div>
                 <div class="cardDetails">
-                    <p>Kumkum Saini</p>
-                    <h2>SOCIAL MEDIA MANAGER</h2>
+                    <p id="cardName18">Kumkum Saini</p>
+                    <h2 id="cardPost18">SOCIAL MEDIA MANAGER</h2>
                 </div>
                 <div class="cardContent">
                     <a href="https://instagram.com/kumkum._.saini01?igshid=NGExMmI2YTkyZg=="><img
@@ -391,18 +388,35 @@ Join us at the Newton School Coding Club and embark on an exciting journey of le
                     <a href="#"><img src="images/github.png" alt=""></a>
                 </div>
             </div>
-            <div class="card zoom">
+            <div class="card zoom" id="card14">
                 <div class="cardImage">
                     <img src="images/Snapchat-1108781339.jpg" alt="">
                 </div>
                 <div class="cardDetails">
-                    <p>Nikhil Prajapati</p>
-                    <h2>SOCIAL MEDIA MANAGER</h2>
+                    <p id="cardName19">Nikhil Prajapati</p>
+                    <h2 id="cardPost19">SOCIAL MEDIA MANAGER</h2>
                 </div>
                 <div class="cardContent">
                     <a href="https://instagram.com/nikhil.0_0_0_1?igshid=ZDc4ODBmNjlmNQ=="><img
                             src="images/instagram.png" alt=""></a>
                     <a href="https://www.linkedin.com/in/nikhil-prajapat-2215a0257"><img src="images/linkedin.png"
+                            alt=""></a>
+                    <a href="#"><img src="images/twitter.png" alt=""></a>
+                    <a href="#"><img src="images/github.png" alt=""></a>
+                </div>
+            </div>
+              <div class="card zoom" id="card15">
+                <div class="cardImage">
+                    <img src="images/Divanshu.jpg" alt="">
+                </div>
+                <div class="cardDetails">
+                    <p id="cardName20">Devanshu Mahla</p>
+                    <h2 id="cardPost20">MANAGEMENT HEAD</h2>
+                </div>
+                <div class="cardContent">
+                    <a href="https://instagram.com/_d.v_mahala18?igshid=MzNlNGNkZWQ4Mg=="><img
+                            src="images/instagram.png" alt=""></a>
+                    <a href="#"><img src="images/linkedin.png"
                             alt=""></a>
                     <a href="#"><img src="images/twitter.png" alt=""></a>
                     <a href="#"><img src="images/github.png" alt=""></a>
@@ -577,9 +591,20 @@ Join us at the Newton School Coding Club and embark on an exciting journey of le
             </label>
             <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"
                 class="message"></textarea>
-            <button type="submit" class="sendButton">Send</button>
+            <button type="submit" class="sendButton" id="sendButton">Send</button>
         </form>
     </div>
+    <footer>
+        <div class="footer" id="footer">
+            <span class="socialMedia" id="socialMedia">
+                <a href="#"><img src="images/instagram.png" alt=""></a>
+                <a href="#"><img src="images/linkedin.png" alt=""></a>
+                <a href="https://github.com/nscc-bkbiet"><img src="images/github.png" alt=""></a>
+                <a href="#"><img src="images/gmail.png" alt=""></a>
+            </span>
+        </div>
+        <a href="https://codesamp-rohan.github.io/Port-Folio/" class="maker" id="maker">&#169; made by Rohan</a>
+    </footer>
     <script src="script.js">
 
     </script>

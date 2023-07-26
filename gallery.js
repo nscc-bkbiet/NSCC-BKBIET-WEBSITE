@@ -82,3 +82,9 @@ function showSlides() {
   x[myIndex - 1].style.display = "block";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+
+function mode() {
+  document.body.classList.toggle("wbody");
+  document.getElementById("navbar").classList.toggle("wnavbar");
+  document.getElementById("para").classList.toggle("wpara");
+}

@@ -24,6 +24,22 @@ body {
 .wpara {
   color: black;
 }
+.wnavbar {
+  background-color: #0000004a;
+}
+.wsendButton {
+  -webkit-text-fill-color: #000000;
+}
+.wsendButton:hover {
+  -webkit-text-fill-color: #fff;
+}
+.wcardName {
+  -webkit-text-fill-color: #000000;
+  font-weight: 500;
+}
+.wmaker {
+  -webkit-text-fill-color: #000000;
+}
 ::-webkit-scrollbar {
   width: 6px;
   scroll-behavior: smooth;
@@ -131,9 +147,6 @@ body {
   position: fixed;
   z-index: 2;
   backdrop-filter: blur(5px);
-}
-.wnavbar {
-  background-color: #0000004a;
 }
 .navbar section {
   display: flex;
@@ -323,7 +336,8 @@ body {
 .teamContainer .card {
   /* width: 250px; */
   height: 45 0px;
-  background-color: #000000;
+  /* background-color: #000000; */
+  background-color: transparent;
   color: white;
   display: flex;
   flex-direction: column;
@@ -616,6 +630,35 @@ form button:hover {
 
 form button img {
   width: 20px;
+}
+.footer {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 30px;
+}
+footer a {
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 100;
+  color: #ffffff;
+  padding: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+.socialMedia {
+  display: flex;
+  flex-direction: row;
+}
+.socialMedia img {
+  width: 30px;
+  transition: 0.4s;
+}
+.socialMedia img:hover {
+  transform: scale(1.5);
+  cursor: pointer;
 }
 @media screen and (max-width: 1000px) {
   .navbarOption {

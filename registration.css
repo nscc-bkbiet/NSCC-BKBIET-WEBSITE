@@ -9,7 +9,41 @@ body {
   overflow-x: hidden;
   /* background: transparent; */
 }
-
+.wbody {
+  background-color: #ffffff;
+  color: #000000;
+}
+.wnavbarOptionA {
+  border: #000000;
+}
+.wpara {
+  color: black;
+}
+.wnavbar {
+  background-color: #0000004a;
+}
+.wsubmit {
+  color: #000000;
+}
+.wname {
+  border: 1px solid pink;
+  color: #000000;
+}
+.wemail {
+  border: 1px solid pink;
+  color: #000000;
+}
+.wphone {
+  border: 1px solid pink;
+  color: #000000;
+}
+.wbranch {
+  border: 1px solid pink;
+  color: #000000;
+}
+.wform {
+  color: #000000;
+}
 ::-webkit-scrollbar {
   width: 6px;
   scroll-behavior: smooth;
@@ -57,7 +91,7 @@ h1 {
 
 .navbar {
   width: 100vw;
-  padding: 20px;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   font-family: Arial, Helvetica, sans-serif;
@@ -178,7 +212,7 @@ form {
   color: white;
 }
 
-form button {
+.submit {
   width: 60vw;
   height: auto;
   padding: 20px;

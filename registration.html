@@ -18,7 +18,7 @@
     <!-- <video autoplay class="mainBackgroundVideo" muted loop>
       <source src="images/0719(1).mp4" type="video/mp4" />
     </video> -->
-    <div class="navbar">
+    <div class="navbar" id="navbar">
       <section>
         <a href="index.html"><img src="images/image-removebg-preview.png" /></a>
         <div class="navbarOption">
@@ -26,9 +26,10 @@
           <a href="project.html">PROJECTS</a>
           <a href="index.html">EVENTS</a>
           <a href="index.html">TEAM</a>
-          <a href="index.html">GALLERY</a>
+          <a href="gallery.html">GALLERY</a>
           <a href="resources.html">NSCC UPDATES</a>
           <a href="registration.html">REGISTRATION</a>
+          <a onclick="mode()" id="navbarOption8">MODE</a>
         </div>
         <div class="dropdown">
           <img src="images/menu.png" onclick="myFunction()" class="dropbtn" />
@@ -37,18 +38,19 @@
             <a href="project.html">PROJECTS</a>
             <a href="index.html">EVENTS</a>
             <a href="index.html">TEAM</a>
-            <a href="index.html">Gallery</a>
+            <a href="gallery.html">Gallery</a>
             <a href="resources.html">NSCC UPDATES</a>
             <a href="registration.html">REGISTRATION</a>
+            <a onclick="mode()" id="navbarOption8">MODE</a>
           </div>
         </div>
       </section>
-      <button>Wanna Connect</button>
+      <button>Connect</button>
     </div>
     <div class="registrationContainer">
       <h1>REGISTRATION</h1>
       <div class="registrationForm">
-        <form method="get">
+        <form method="get" id="form">
           <label for="name">
             <input
               type="text"
@@ -85,7 +87,7 @@
               required
             />
           </label>
-          <label for="branch" class="branch"
+          <label for="branch" class="branch" id="branch"
             >Branch*
             <select id="branchOption" name="option" required>
               <option value="none">None</option>
@@ -107,7 +109,7 @@
               <option value="ece">4th</option>
             </select>
           </label>
-          <button type="submit">Send</button>
+          <button type="submit" id="submit" class="submit">Send</button>
         </form>
       </div>
     </div>
@@ -129,6 +131,18 @@
           }
         }
       };
+
+      function mode() {
+        document.body.classList.toggle("wbody");
+        document.getElementById("navbar").classList.toggle("wnavbar");
+        document.getElementById("para").classList.toggle("wpara");
+        document.getElementById("submit").classList.toggle("wsubmit");
+        document.getElementById("form").classList.toggle("wform");
+        document.getElementById("name").classList.toggle("wname");
+        document.getElementById("email").classList.toggle("wemail");
+        document.getElementById("phone").classList.toggle("wphone");
+        document.getElementById("branch").classList.toggle("wbranch");
+      }
     </script>
   </body>
 </html>

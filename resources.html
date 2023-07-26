@@ -10,10 +10,7 @@
 
   <body>
     <div class="topArea">
-      <!-- <video autoplay class="mainBackgroundVideo" muted loop>
-        <source src="images/0719(1).mp4" type="video/mp4" />
-      </video> -->
-      <div class="navbar">
+      <div class="navbar" id="navbar">
         <section>
           <img src="images/image-removebg-preview.png" />
           <div class="navbarOption">
@@ -21,9 +18,10 @@
             <a href="project.html">PROJECTS</a>
             <a href="index.html">EVENTS</a>
             <a href="index.html">TEAM</a>
-            <a href="#">GALLERY</a>
+            <a href="gallery.html">GALLERY</a>
             <a href="resources.html">NSCC UPDATES</a>
             <a href="registration.html">REGISTRATION</a>
+            <a onclick="resourcemode()" id="navbarOption8">MODE</a>
           </div>
           <div class="dropdown">
             <img src="images/menu.png" onclick="myFunction()" class="dropbtn" />
@@ -32,20 +30,27 @@
               <a href="project.html">PROJECTS</a>
               <a href="index.html">EVENTS</a>
               <a href="index.html">TEAM</a>
-              <a href="#">GALLERY</a>
+              <a href="gallery.html">GALLERY</a>
               <a href="resources.html">NSCC UPDATES</a>
               <a href="registration.html">REGISTRATION</a>
+              <a onclick="mode()" id="navbarOption8">MODE</a>
             </div>
           </div>
         </section>
         <a href="index.html"><button>Connect</button></a>
       </div>
-      <div class="topContent">
-        <h2>Newton School</h2>
+      <div class="topContent" id="topContent">
+        <h2 id="heading" class="heading">Newton School</h2>
         <h1>CODING CLUB</h1>
         <span class="topContentPara">
-          <h3>Want to know about the on-going Events in NSCC?</h3>
-          <h3><a href="https://my.newtonschool.co/contest/all">Follow</a></h3>
+          <h3 id="subHeading" class="subHeading">
+            Want to know about the on-going Events in NSCC?
+          </h3>
+          <h3>
+            <a href="https://my.newtonschool.co/contest/all" id="anker"
+              >Follow</a
+            >
+          </h3>
         </span>
       </div>
     </div>
