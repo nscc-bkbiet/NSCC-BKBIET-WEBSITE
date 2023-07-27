@@ -19,13 +19,11 @@ window.onclick = function (event) {
 function projectmode() {
   document.body.classList.toggle("wbody");
   document.getElementById("navbar").classList.toggle("wnavbar");
+  document.getElementById("knowMore").classList.toggle("wsubheading");
+  document.getElementById("cardContent1").classList.toggle("wsubheading");
+  document.getElementById("cardContent2").classList.toggle("wsubheading");
+  document.getElementById("cardContent3").classList.toggle("wsubheading");
   document.getElementById("heading1").classList.toggle("wheading");
-  document.getElementById("subheading1").classList.toggle("wheading");
   document.getElementById("heading2").classList.toggle("wheading");
-  document.getElementById("subheading2").classList.toggle("wheading");
   document.getElementById("heading3").classList.toggle("wheading");
-  document.getElementById("subheading3").classList.toggle("wheading");
-  document.getElementById("heading4").classList.toggle("wheading");
-  document.getElementById("subheading4").classList.toggle("wheading");
-  document.getElementById("knowMore").classList.toggle("wheading");
 }

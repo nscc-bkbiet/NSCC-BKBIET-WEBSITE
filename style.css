@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  transition: 0.8s;
 }
 
 html {
@@ -897,6 +898,10 @@ footer a {
   }
   form button {
     width: 90vw;
+  }
+  .upcoming {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 

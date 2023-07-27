@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: 0.4s;
 }
 body {
   background-color: #070b13;
@@ -21,7 +22,10 @@ body {
   background-color: #0000004a;
 }
 .wheading {
-  -webkit-text-fill-color: black;
+  -webkit-text-fill-color: #ffc107;
+}
+.wsubheading {
+  -webkit-text-fill-color: #1f4342;
 }
 ::-webkit-scrollbar {
   width: 6px;
@@ -63,7 +67,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   position: fixed;
   z-index: 2;
-  /* background-color: #070b13; */
   background-color: #070b1385;
 }
 
@@ -174,6 +177,9 @@ body {
   gap: 10px;
   text-align: justify;
 }
+.cardContent img {
+  border: 1px solid #ffc107;
+}
 .submit {
   width: 40%;
   padding: 10px;
@@ -182,12 +188,19 @@ body {
   border-radius: 3px;
   border: 0px;
   transition: 0.2s;
+  transform: scale(0.9);
 }
 .submit:hover {
-  box-shadow: 2px 4px 10px #ffc107;
+  background-color: #ffc107;
+  border: 0px;
+  color: #303030;
+  animation-name: buttonSubmit;
+  animation-duration: 0.4s;
+  animation-iteration-count: 1;
+  transform: scale(1);
 }
 .card img {
-  width: 40vw;
+  width: 30vw;
 }
 .para {
   font-weight: 100;
@@ -272,9 +285,6 @@ a {
   }
 }
 @media screen and (max-width: 800px) {
-  .card img {
-    width: 90vw;
-  }
   .navbar {
     padding: 17px;
   }
@@ -285,6 +295,12 @@ a {
     height: 40px;
     width: 120px;
     font-size: 0.71rem;
+  }
+  .topContent h1 {
+    font-size: 3rem;
+  }
+  .topContent h2 {
+    font-size: 2rem;
   }
 }
 @media screen and (max-width: 600px) {
@@ -324,17 +340,15 @@ a {
   .contactUs h1 {
     font-size: 4.6rem;
   }
+  .topContent h1 {
+    font-size: 2.4rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
   .topContent h2 {
-    font-size: 2.4rem;
+    font-size: 1.7rem;
   }
-
-  .topContent h1 {
-    font-size: 4.6rem;
-  }
-
   .aboutSection {
     width: 90vw;
   }
@@ -353,21 +367,15 @@ a {
   a {
     font-size: 14px;
   }
+  .card {
+    width: 95vw;
+  }
+  .cardContent {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 470px) {
-  .topContent h2 {
-    font-size: 2rem;
-  }
-
-  .topContent h1 {
-    font-size: 4rem;
-  }
-
-  .topContent h3 {
-    font-size: 1.5rem;
-  }
-
   .nsccAbout h1 {
     font-size: 2rem;
   }
@@ -390,18 +398,6 @@ a {
 }
 
 @media screen and (max-width: 400px) {
-  .topContent h2 {
-    font-size: 1.8rem;
-  }
-
-  .topContent h1 {
-    font-size: 3rem;
-  }
-
-  .topContent h3 {
-    font-size: 1.2rem;
-  }
-
   .timeline h1 {
     font-size: 3.5rem;
   }
@@ -412,18 +408,6 @@ a {
 }
 
 @media screen and (max-width: 300px) {
-  .topContent h2 {
-    font-size: 1.8rem;
-  }
-
-  .topContent h1 {
-    font-size: 2.8rem;
-  }
-
-  .topContent h3 {
-    font-size: 1rem;
-  }
-
   .contactUs h1 {
     font-size: 2.8rem;
   }
