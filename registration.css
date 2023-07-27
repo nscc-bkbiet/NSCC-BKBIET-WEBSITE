@@ -187,7 +187,7 @@ form {
   border-radius: 10px;
   border: 1px solid #52d2ce;
   background: transparent;
-  color: white;
+  color: #52d2ce;
 }
 
 .email {
@@ -198,7 +198,7 @@ form {
   border-radius: 10px;
   border: 1px solid #52d2ce;
   background: transparent;
-  color: white;
+  color: #52d2ce;
 }
 
 .message {
@@ -209,7 +209,7 @@ form {
   border-radius: 10px;
   border: 1px solid #52d2ce;
   background: transparent;
-  color: white;
+  color: #52d2ce;
 }
 
 .submit {
