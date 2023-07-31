@@ -1,3 +1,12 @@
+const cursor = document.querySelector(".cursor");
+
+window.addEventListener("mousemove", (e) => {
+  setTimeout(() => {
+    cursor.style.left = e.pageX + "px";
+    cursor.style.top = e.pageY + "px";
+  }, 150);
+});
+
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -211,3 +220,9 @@ function mode() {
 
   document.getElementById("maker").classList.toggle("wmaker");
 }
+document.querySelector(".mainBackgroundImage").classList.remove("blur");
+$(window).scroll(function (e) {
+  var distanceScrolled = $(this).scrollTop();
+
+  $(".blurme").css("-webkit-filter", "blur(" + distanceScrolled / 60 + "px)");
+});

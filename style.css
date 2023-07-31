@@ -15,6 +15,22 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+.cursor {
+  z-index: -1;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  box-shadow: 0px 0px 400px #52d2ce32;
+  background-color: #52d2ce47;
+  backdrop-filter: blur(1px);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #52d2ce;
+  transition: 0s;
+  scroll-behavior: smooth;
+}
 .wbody {
   background-color: #ffffff;
   color: #000000;
@@ -113,25 +129,19 @@ body {
   transform: scaleX(1);
   opacity: 1;
 }
-/* Slider UP */
-/* .mainBackgroundVideo {
-  width: 100vw;
-  height: 120vh;
-  filter: blur(5px);
-  position: fixed;
-  z-index: -1;
-  object-fit: cover;
-} */
 .mainBackgroundImage {
   width: 100vw;
   height: 100vh;
-  filter: opacity(0.6);
+  filter: blur(0px);
   position: absolute;
   z-index: -1;
   object-fit: cover;
 }
 .wmainBackgroundImage {
   filter: opacity(1);
+}
+.blur {
+  filter: blur(30px);
 }
 .topArea {
   display: flex;
@@ -335,9 +345,8 @@ body {
 }
 
 .teamContainer .card {
-  /* width: 250px; */
+  backdrop-filter: blur(10px);
   height: 45 0px;
-  /* background-color: #000000; */
   background-color: transparent;
   color: white;
   display: flex;
@@ -349,7 +358,18 @@ body {
   padding: 40px;
   box-shadow: 2px 4px 18px #56cad1;
 }
-
+.cardImage {
+  z-index: 3;
+  position: relative;
+}
+.cardDetails {
+  z-index: 3;
+  position: relative;
+}
+.cardContent {
+  z-index: 3;
+  position: relative;
+}
 .teamContainer .card .cardImage img {
   border-radius: 50%;
   width: 170px;
