@@ -4,7 +4,7 @@ window.addEventListener("mousemove", (e) => {
   setTimeout(() => {
     cursor.style.left = e.pageX + "px";
     cursor.style.top = e.pageY + "px";
-  }, 150);
+  }, 10);
 });
 
 function myFunction() {
@@ -126,9 +126,9 @@ function zoom() {
 function mode() {
   document.body.classList.toggle("wbody");
   document.getElementById("navbar").classList.toggle("wnavbar");
-  document
-    .getElementById("mainBackgroundImage")
-    .classList.toggle("wmainBackgroundImage");
+  // document
+  //   .getElementById("mainBackgroundImage")
+  //   .classList.toggle("wmainBackgroundImage");
   document
     .getElementById("timeline-content1")
     .classList.toggle("wtimeline-content");
@@ -219,6 +219,8 @@ function mode() {
   document.getElementById("cardPost21").classList.toggle("wcardName");
 
   document.getElementById("maker").classList.toggle("wmaker");
+
+  document.getElementById("card1").classList.toggle("wcardName");
 }
 document.querySelector(".mainBackgroundImage").classList.remove("blur");
 $(window).scroll(function (e) {
