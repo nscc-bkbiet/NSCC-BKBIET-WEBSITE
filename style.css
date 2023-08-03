@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  /* transition: 0.4s; */
   font-family: "Handjet", cursive;
 }
 
@@ -152,11 +151,11 @@ body {
 }
 
 .navbar {
+  font-family: "Handjet", cursive;
   width: 100vw;
   padding: 15px;
   display: flex;
   justify-content: space-between;
-  font-family: Arial, Helvetica, sans-serif;
   position: fixed;
   z-index: 2;
   backdrop-filter: blur(5px);
@@ -203,7 +202,8 @@ body {
 .navbar button {
   height: 50px;
   width: 150px;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  font-weight: 1000;
   background-color: #719de6;
   border-radius: 10px;
   border: none;
@@ -220,11 +220,12 @@ body {
 }
 
 .topContent {
+  user-select: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
   line-height: 0.83;
 }
 .topContent img {
@@ -253,6 +254,38 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 100;
   margin-top: 3px;
+}
+.text {
+  position: relative;
+  backdrop-filter: blur(20px);
+  padding: 30px;
+  overflow-y: scroll;
+  overflow: hidden;
+  background-color: rgba(255, 235, 205, 0.074);
+  text-align: center;
+  letter-spacing: 5px;
+  flex-shrink: 0;
+}
+.text h1 {
+  font-family: "Handjet", cursive;
+  background: linear-gradient(to right, #719de6, #52d2ce, #56cad1, #719de6);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.coding {
+  backdrop-filter: blur(10px);
+  animation: movement 5s infinite alternate;
+  width: 100%;
+  filter: opacity(0.5);
+  backdrop-filter: blur(100px);
+}
+@keyframes movement {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(100px);
+  }
 }
 .scrollImage {
   display: flex;
@@ -629,7 +662,7 @@ form {
 .message {
   width: 60vw;
   height: auto;
-  padding: 20px;
+  padding: 10px 20px;
   font-size: 1.4rem;
   border-radius: 10px;
   border: 1px solid #52d2ce;
