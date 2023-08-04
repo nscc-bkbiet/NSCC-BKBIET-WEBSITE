@@ -16,39 +16,57 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bevan&family=Grandiflora+One&family=Handjet:wght@500&family=Inter&family=Poppins:wght@900&family=Press+Start+2P&family=Quicksand:wght@300&family=Rock+3D&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="topArea">
+      <video
+        src="images/0719(1).mp4"
+        autoplay
+        loop
+        muted
+        id="mainBackgroundImage"
+        class="mainBackgroundImage"
+      ></video>
       <div class="navbar" id="navbar">
         <section>
           <img src="images/image-removebg-preview.png" />
           <div class="navbarOption">
             <a href="index.html">HOME</a>
             <a href="project.html">PROJECTS</a>
-            <a href="#timeline">EVENTS</a>
-            <a href="#nsccTeam">TEAM</a>
+            <a href="index.html#timeline">EVENTS</a>
+            <a href="index.html#nsccTeam">TEAM</a>
             <a href="gallery.html">GALLERY</a>
             <a href="resources.html">NSCC UPDATES</a>
             <a href="registration.html">REGISTRATION</a>
-            <a onclick="mode()" id="navbarOption8">MODE</a>
+            <!-- <a onclick="mode()" id="navbarOption8">MODE</a> -->
           </div>
           <div class="dropdown">
             <img src="images/menu.png" onclick="myFunction()" class="dropbtn" />
             <div id="myDropdown" class="dropdown-content">
               <a href="index.html">HOME</a>
               <a href="project.html">PROJECTS</a>
-              <a href="#timeline">EVENTS</a>
-              <a href="#nsccTeam">TEAM</a>
-              <a href="#">GALLERY</a>
+              <a href="index.html#timeline">EVENTS</a>
+              <a href="index.html#nsccTeam">TEAM</a>
+              <a href="gallery.html">GALLERY</a>
               <a href="resources.html">NSCC UPDATES</a>
               <a href="registration.html">REGISTRATION</a>
-              <a onclick="mode()" id="navbarOption8">MODE</a>
+              <!-- <a onclick="mode()" id="navbarOption8">MODE</a> -->
             </div>
           </div>
         </section>
-        <a href="#contactUs"><button>Connect</button></a>
+        <a href="index.html#contactUs"><button>Connect</button></a>
       </div>
       <div class="topContent">
+        <h1>Work Under Process</h1>
+      </div>
+      <!-- <div class="topContent">
         <h1>GALLERY</h1>
       </div>
       <div class="bigImage">
@@ -62,7 +80,6 @@
       </div>
       <div class="smallImage"></div>
     </div>
-    <!-- Slider -->
     <h2 style="text-align: center">Slideshow Gallery</h2>
 
     <div class="container">
@@ -303,7 +320,7 @@
             alt="Snowy Mountains"
           />
         </div>
-      </div>
+      </div> -->
     </div>
 
     <script src="gallery.js"></script>

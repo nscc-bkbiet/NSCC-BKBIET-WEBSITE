@@ -42,14 +42,13 @@ body {
   background: #1f4342;
 }
 
-.mainBackgroundVideo {
+.mainBackgroundImage {
   width: 100vw;
   height: 100vh;
-  filter: blur(5px);
+  filter: brightness(0.4) blur(5px);
   position: fixed;
-  z-index: -1;
+  z-index: -2;
   object-fit: cover;
-  position: absolute;
 }
 
 .topArea {
@@ -84,9 +83,8 @@ body {
   text-decoration: none;
   color: white;
   padding: 10px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   letter-spacing: 3px;
-  font-weight: 1000;
 }
 
 .navbar section a:hover {
@@ -114,7 +112,6 @@ body {
   height: 50px;
   width: 150px;
   font-size: 1.5rem;
-  font-weight: 1000;
   background-color: #719de6;
   border-radius: 10px;
   border: none;

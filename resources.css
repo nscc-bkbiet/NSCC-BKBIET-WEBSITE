@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Handjet", cursive;
 }
 
 body {
@@ -39,13 +40,12 @@ body {
   background: #1f4342;
 }
 
-.mainBackgroundVideo {
+.mainBackgroundImage {
   width: 100vw;
-  height: 120vh;
-  /* filter: brightness(0.7); */
-  filter: blur(5px);
+  height: 100vh;
+  filter: brightness(0.4) blur(5px);
   position: fixed;
-  z-index: -1;
+  z-index: -2;
   object-fit: cover;
 }
 
@@ -56,15 +56,14 @@ body {
 }
 
 .navbar {
+  font-family: "Handjet", cursive;
   width: 100vw;
   padding: 15px;
   display: flex;
   justify-content: space-between;
-  font-family: Arial, Helvetica, sans-serif;
   position: fixed;
   z-index: 2;
-  /* background-color: #070b13; */
-  background-color: #070b1385;
+  backdrop-filter: blur(5px);
 }
 
 .navbar section {
@@ -82,6 +81,7 @@ body {
   color: white;
   padding: 10px;
   font-size: 1rem;
+  letter-spacing: 3px;
 }
 
 .navbar section a:hover {
@@ -91,7 +91,7 @@ body {
 .navbar button {
   height: 50px;
   width: 150px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   background-color: #719de6;
   border-radius: 10px;
   border: none;
@@ -102,6 +102,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 20px;
 }
 .navbar button:hover {
   background-color: #638bcb;
@@ -123,11 +124,13 @@ body {
 }
 
 .topContent {
+  user-select: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 90vh;
+  line-height: 0.83;
 }
 
 .heading {
@@ -136,12 +139,19 @@ body {
   font-size: 3.5rem;
 }
 
-.topContent h1 {
+.topContent h2 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  font-size: 5rem;
+  letter-spacing: 6.5px;
+}
+
+.topContent h1 {
+  font-family: "Handjet", cursive;
   background: linear-gradient(to right, #719de6, #52d2ce, #56cad1, #719de6);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  font-size: 8rem;
+  font-size: 12rem;
 }
 
 .topContent h3 {
