@@ -15,6 +15,27 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+.cursor {
+  z-index: -1;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  /* box-shadow: 0px 0px 400px #52d2ce32; */
+  /* background-color: #52d2ce47; */
+  /* backdrop-filter: blur(1px); */
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border: 1px solid #52d2ce; */
+  transition: 0s;
+  scroll-behavior: smooth;
+}
+.cursor img {
+  width: 30px;
+  /* box-shadow: 0px 0px 40px #52d2ce; */
+  border-radius: 50%;
+}
 .wbody {
   background-color: #ffffff;
   color: #000000;
@@ -139,7 +160,7 @@ body {
   text-decoration: none;
   color: white;
   padding: 10px;
-  font-size: 1rem;
+  font-size: 1.3rem;
   letter-spacing: 3px;
 }
 
@@ -346,6 +367,9 @@ img {
 /* dropdown */
 
 @media screen and (max-width: 1000px) {
+  .cursor {
+    display: none;
+  }
   .navbarOption {
     display: none;
   }
@@ -387,7 +411,7 @@ img {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    min-width: 160px;
+    width: 80vw;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
   }
@@ -408,9 +432,11 @@ img {
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {
     display: block;
-    background-color: rgba(0, 0, 0, 0.401);
+    background-color: rgba(0, 0, 0, 1);
+
     border-radius: 10px;
     border: 1px solid white;
+    margin-top: 50px;
   }
 }
 @media screen and (max-width: 700px) {

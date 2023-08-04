@@ -20,16 +20,21 @@ body {
   position: absolute;
   width: 15px;
   height: 15px;
-  box-shadow: 0px 0px 400px #52d2ce32;
-  background-color: #52d2ce47;
-  backdrop-filter: blur(1px);
+  /* box-shadow: 0px 0px 400px #52d2ce32; */
+  /* background-color: #52d2ce47; */
+  /* backdrop-filter: blur(1px); */
   border-radius: 50%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 1px solid #52d2ce;
+  /* border: 1px solid #52d2ce; */
   transition: 0s;
   scroll-behavior: smooth;
+}
+.cursor img {
+  width: 30px;
+  box-shadow: 0px 0px 100px #52d2ce;
+  border-radius: 50%;
 }
 .wbody {
   background-color: #ffffff;
@@ -174,7 +179,7 @@ body {
   text-decoration: none;
   color: white;
   padding: 10px;
-  font-size: 1rem;
+  font-size: 1.3rem;
   letter-spacing: 3px;
 }
 
@@ -272,11 +277,11 @@ body {
   -webkit-background-clip: text;
 }
 .coding {
-  backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); */
   animation: movement 5s infinite alternate;
-  width: 100%;
-  filter: opacity(0.5);
-  backdrop-filter: blur(100px);
+  width: 60%;
+  /* filter: opacity(0.5); */
+  /* backdrop-filter: blur(100px); */
 }
 @keyframes movement {
   from {
@@ -324,7 +329,7 @@ body {
 .nsccAbout h1 {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  margin-top: 400px;
+  margin-top: 200px;
   font-size: 4rem;
   background: linear-gradient(
     to right,
@@ -624,7 +629,7 @@ body {
   -webkit-background-clip: text;
   text-align: center;
   margin-top: 200px;
-  margin-bottom: 100px;
+  margin-bottom: 10px;
 }
 
 form {
@@ -744,6 +749,7 @@ footer a {
     width: 30px;
   }
   /* Dropdown Button */
+
   .dropbtn {
     background-color: transparent !important;
     color: white;
@@ -770,7 +776,7 @@ footer a {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    min-width: 160px;
+    width: 80vw;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
   }
@@ -791,9 +797,11 @@ footer a {
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {
     display: block;
-    background-color: rgba(0, 0, 0, 0.401);
+    background-color: rgba(0, 0, 0, 1);
+
     border-radius: 10px;
     border: 1px solid white;
+    margin-top: 50px;
   }
 }
 @media screen and (max-width: 800px) {
@@ -802,7 +810,7 @@ footer a {
   }
 
   .topContent h1 {
-    font-size: 6rem;
+    font-size: 9rem;
   }
 
   .navbarOption {
@@ -823,18 +831,27 @@ footer a {
     width: 120px;
     font-size: 0.71rem;
   }
+  .text {
+    font-size: 10px;
+  }
   /* Dropdown Button */
 }
 
 @media screen and (max-width: 600px) {
   .topContent h2 {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
+    letter-spacing: 6px;
   }
 
   .topContent h1 {
-    font-size: 4.6rem;
+    font-size: 7rem;
   }
-
+  .topContent h3 {
+    font-size: 1rem;
+  }
+  .text {
+    font-size: 7px;
+  }
   .teamContainer {
     gap: 10px;
   }
@@ -872,6 +889,9 @@ footer a {
   form button {
     width: 80vw;
   }
+  .aboutSection {
+    width: 90vw;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -880,7 +900,7 @@ footer a {
   }
 
   .topContent h1 {
-    font-size: 4.6rem;
+    font-size: 8rem;
   }
 
   .aboutSection {
@@ -902,15 +922,15 @@ footer a {
 
 @media screen and (max-width: 470px) {
   .topContent h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .topContent h1 {
-    font-size: 4rem;
+    font-size: 6rem;
   }
 
   .topContent h3 {
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
 
   .nsccAbout h1 {

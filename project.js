@@ -1,6 +1,14 @@
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
+const cursor = document.querySelector(".cursor");
+
+window.addEventListener("mousemove", (e) => {
+  setTimeout(() => {
+    cursor.style.left = e.pageX + "px";
+    cursor.style.top = e.pageY + "px";
+  }, 10);
+});
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function (event) {

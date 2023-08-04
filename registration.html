@@ -19,6 +19,7 @@
   </head>
 
   <body>
+    <div class="cursor"><img src="images/guy-fawkes-mask.png" alt="" /></div>
     <!-- <video autoplay class="mainBackgroundVideo" muted loop>
       <source src="images/0719(1).mp4" type="video/mp4" />
     </video> -->
@@ -44,7 +45,17 @@
           <!-- <a onclick="mode()" id="navbarOption8">MODE</a> -->
         </div>
         <div class="dropdown">
-          <img src="images/menu.png" onclick="myFunction()" class="dropbtn" />
+          <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+          <lord-icon
+            src="https://cdn.lordicon.com/wgwcqouc.json"
+            trigger="morph"
+            colors="primary:#ffffff,secondary:#08a88a"
+            style="width: 30px; height: 30px"
+            class="dropbtn"
+            onclick="myFunction()"
+          >
+          </lord-icon>
+          <!-- <img src="images/menu.png" onclick="myFunction()" class="dropbtn" /> -->
           <div id="myDropdown" class="dropdown-content">
             <a href="index.html">HOME</a>
             <a href="project.html">PROJECTS</a>
@@ -126,6 +137,15 @@
       </div>
     </div>
     <script>
+      const cursor = document.querySelector(".cursor");
+
+      window.addEventListener("mousemove", (e) => {
+        setTimeout(() => {
+          cursor.style.left = e.pageX + "px";
+          cursor.style.top = e.pageY + "px";
+        }, 10);
+      });
+
       function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
       }

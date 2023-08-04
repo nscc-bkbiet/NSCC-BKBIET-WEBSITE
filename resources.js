@@ -1,3 +1,12 @@
+const cursor = document.querySelector(".cursor");
+
+window.addEventListener("mousemove", (e) => {
+  setTimeout(() => {
+    cursor.style.left = e.pageX + "px";
+    cursor.style.top = e.pageY + "px";
+  }, 10);
+});
+
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }

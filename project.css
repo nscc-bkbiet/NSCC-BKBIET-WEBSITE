@@ -8,6 +8,27 @@ body {
   background-color: #070b13;
   overflow-x: hidden;
 }
+.cursor {
+  z-index: -1;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  /* box-shadow: 0px 0px 400px #52d2ce32; */
+  /* background-color: #52d2ce47; */
+  /* backdrop-filter: blur(1px); */
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border: 1px solid #52d2ce; */
+  transition: 0s;
+  scroll-behavior: smooth;
+}
+.cursor img {
+  width: 30px;
+  /* box-shadow: 0px 0px 40px #52d2ce; */
+  border-radius: 50%;
+}
 .wbody {
   background-color: #ffffff;
   color: #000000;
@@ -83,7 +104,7 @@ body {
   text-decoration: none;
   color: white;
   padding: 10px;
-  font-size: 1rem;
+  font-size: 1.3rem;
   letter-spacing: 3px;
 }
 
@@ -172,7 +193,7 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #fff;
-  width: 60vw;
+  width: 40vw;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -215,7 +236,10 @@ a {
 .card:nth-child(even) {
   left: 0;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
+  .cursor {
+    display: none;
+  }
   .topContent h2 {
     font-size: 3rem;
   }
@@ -259,7 +283,7 @@ a {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    min-width: 160px;
+    width: 80vw;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
   }
@@ -280,9 +304,11 @@ a {
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {
     display: block;
-    background-color: rgba(0, 0, 0, 0.401);
+    background-color: rgba(0, 0, 0, 1);
+
     border-radius: 10px;
     border: 1px solid white;
+    margin-top: 50px;
   }
 }
 @media screen and (max-width: 800px) {
