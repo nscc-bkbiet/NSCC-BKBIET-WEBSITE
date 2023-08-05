@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+      }
+      .model {
+        width: 70vw;
+        height: 70vh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        background-color: pink;
+        color: #000;
+        z-index: 100;
+      }
+      .overlay {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        backdrop-filter: blur(100px);
+        z-index: 3;
+      }
+
+      .close {
+        cursor: pointer;
+        position: relative;
+        text-align: end;
+        padding: 30px;
+      }
+      .hidden {
+        display: none;
+      }
+    </style>
+    <img class="icon" src="images/instagram.png" />
+    <div class="model hidden">
+      <h1 class="close">&times;</h1>
+      <h1 class="modelText">Joining Soon</h1>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script>
+      const showModel = document.querySelector(".icon");
+      const closeModel = document.querySelector(".close");
+      const model = document.querySelector(".model");
+      const overlay = document.querySelector(".overlay");
+
+      showModel.addEventListener("click", function () {
+        model.classList.remove("hidden");
+        overlay.classList.remove("hidden");
+      });
+      closeModel.addEventListener("click", function () {
+        model.classList.add("hidden");
+        overlay.classList.add("hidden");
+      });
+      overlay.addEventListener("click", function () {
+        model.classList.add("hidden");
+        overlay.classList.add("hidden");
+      });
+    </script>
+  </body>
+</html>

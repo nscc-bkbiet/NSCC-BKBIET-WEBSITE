@@ -1,3 +1,9 @@
+var loader = document.getElementById("mainLoader");
+
+window.addEventListener("load", function () {
+  loader.style.display = "none";
+});
+
 const cursor = document.querySelector(".cursor");
 
 window.addEventListener("mousemove", (e) => {
@@ -129,3 +135,21 @@ $(window).scroll(function (e) {
 
   $(".blurme").css("-webkit-filter", "blur(" + distanceScrolled / 60 + "px)");
 });
+
+// const showModel = document.querySelector(".icon");
+// const closeModel = document.querySelector(".close");
+// const model = document.querySelector(".model");
+// const overlay = document.querySelector(".overlay");
+
+// showModel.addEventListener("click", function () {
+//   model.classList.remove("hidden");
+//   overlay.classList.remove("hidden");
+// });
+// closeModel.addEventListener("click", function () {
+//   model.classList.add("hidden");
+//   overlay.classList.add("hidden");
+// });
+// overlay.addEventListener("click", function () {
+//   model.classList.add("hidden");
+//   overlay.classList.add("hidden");
+// });

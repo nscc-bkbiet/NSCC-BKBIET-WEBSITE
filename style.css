@@ -6,6 +6,95 @@
   font-family: "Handjet", cursive;
 }
 
+.mainLoading {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 20;
+  background-color: #333;
+  font-family: monospace;
+  letter-spacing: 10px;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #7d7d7d;
+}
+#L {
+  animation: blur-text 2s 0s infinite;
+  animation-direction: normal;
+}
+#O {
+  animation: blur-text 2s 0.2s infinite;
+  animation-direction: normal;
+}
+#A {
+  animation: blur-text 2s 0.4s infinite;
+  animation-direction: normal;
+}
+#D {
+  animation: blur-text 2s 0.6s infinite;
+  animation-direction: normal;
+}
+#I {
+  animation: blur-text 2s 0.8s infinite;
+  animation-direction: normal;
+}
+#N {
+  animation: blur-text 2s 1s infinite;
+  animation-direction: normal;
+}
+#G {
+  animation: blur-text 2s 1.2s infinite;
+  animation-direction: normal;
+}
+@keyframes blur-text {
+  0% {
+    filter: blur(0px);
+  }
+  4% {
+    filter: blur(4px);
+  }
+}
+
+/* .model {
+  width: 70vw;
+  height: 70vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  background-color: pink;
+  color: #000;
+  z-index: 100;
+}
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  backdrop-filter: blur(100px);
+  z-index: 99;
+}
+.icon {
+  width: 30px;
+}
+.close {
+  cursor: pointer;
+  position: relative;
+  text-align: end;
+  padding: 30px;
+}
+.hidden {
+  display: none;
+} */
+
 html {
   scroll-behavior: smooth;
 }
