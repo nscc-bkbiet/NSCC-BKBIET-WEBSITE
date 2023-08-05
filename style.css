@@ -24,7 +24,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #7d7d7d;
+  /* color: #7d7d7d; */
+}
+.loading-text:nth-child(odd) {
+  color: #719de6;
 }
 #L {
   animation: blur-text 2s 0s infinite;
@@ -33,6 +36,7 @@
 #O {
   animation: blur-text 2s 0.2s infinite;
   animation-direction: normal;
+  color: #52d2ce;
 }
 #A {
   animation: blur-text 2s 0.4s infinite;
@@ -41,6 +45,7 @@
 #D {
   animation: blur-text 2s 0.6s infinite;
   animation-direction: normal;
+  color: #52d2ce;
 }
 #I {
   animation: blur-text 2s 0.8s infinite;
@@ -49,6 +54,7 @@
 #N {
   animation: blur-text 2s 1s infinite;
   animation-direction: normal;
+  color: #52d2ce;
 }
 #G {
   animation: blur-text 2s 1.2s infinite;
@@ -109,14 +115,10 @@ body {
   position: absolute;
   width: 15px;
   height: 15px;
-  /* box-shadow: 0px 0px 400px #52d2ce32; */
-  /* background-color: #52d2ce47; */
-  /* backdrop-filter: blur(1px); */
   border-radius: 50%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* border: 1px solid #52d2ce; */
   transition: 0s;
   scroll-behavior: smooth;
 }
@@ -366,11 +368,8 @@ body {
   -webkit-background-clip: text;
 }
 .coding {
-  /* backdrop-filter: blur(10px); */
   animation: movement 5s infinite alternate;
   width: 60%;
-  /* filter: opacity(0.5); */
-  /* backdrop-filter: blur(100px); */
 }
 @keyframes movement {
   from {
@@ -408,7 +407,6 @@ body {
 }
 
 .aboutSection {
-  /* gap: 30px; */
   width: 70vw;
   display: flex;
   flex-direction: column;
@@ -697,6 +695,9 @@ body {
   .timeline-dot {
     left: 0;
   }
+  .mainLoading {
+    font-size: 55px;
+  }
 }
 
 .contactUs {
@@ -925,8 +926,15 @@ footer a {
   }
   /* Dropdown Button */
 }
-
+@media screen and (max-width: 700px) {
+  .mainLoading {
+    font-size: 40px;
+  }
+}
 @media screen and (max-width: 600px) {
+  .mainLoading {
+    font-size: 30px;
+  }
   .topContent h2 {
     font-size: 2.6rem;
     letter-spacing: 6px;
@@ -984,6 +992,10 @@ footer a {
 }
 
 @media screen and (max-width: 500px) {
+  .mainLoading {
+    font-size: 35px;
+    letter-spacing: 4px;
+  }
   .topContent h2 {
     font-size: 2.4rem;
   }

@@ -1,5 +1,5 @@
 var loader = document.getElementById("mainLoader");
-var topArea = document.querySelector(".topArea");
+var topArea = document.getElementById("topArea");
 
 window.addEventListener("load", function () {
   loader.style.display = "none";
@@ -7,7 +7,7 @@ window.addEventListener("load", function () {
 });
 
 window.addEventListener("unload", function () {
-  topArea.style.display = "none";
+  topArea.classList.add = "hidden";
 });
 
 const cursor = document.querySelector(".cursor");
