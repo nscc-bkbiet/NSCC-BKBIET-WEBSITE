@@ -1,7 +1,13 @@
 var loader = document.getElementById("mainLoader");
+var topArea = document.querySelector(".topArea");
 
 window.addEventListener("load", function () {
   loader.style.display = "none";
+  topArea.style.display = "block";
+});
+
+window.addEventListener("unload", function () {
+  topArea.style.display = "none";
 });
 
 const cursor = document.querySelector(".cursor");
