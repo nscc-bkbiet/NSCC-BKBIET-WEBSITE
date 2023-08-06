@@ -29,6 +29,9 @@
 .loading-text:nth-child(odd) {
   color: #719de6;
 }
+.loading-text p {
+  font-size: 20px;
+}
 #L {
   animation: blur-text 2s 0s infinite;
   animation-direction: normal;
