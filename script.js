@@ -1,5 +1,5 @@
 var loader = document.getElementById("mainLoader");
-var topArea = document.getElementById("topArea");
+var body = document.querySelector("body");
 
 window.addEventListener("load", function () {
   loader.style.display = "none";
@@ -7,7 +7,7 @@ window.addEventListener("load", function () {
 });
 
 window.addEventListener("unload", function () {
-  topArea.classList.add = "hidden";
+  body.style.display = "none";
 });
 
 const cursor = document.querySelector(".cursor");
@@ -103,24 +103,6 @@ window.addEventListener("scroll", scale);
 
 function scale() {
   var reveals = document.querySelectorAll(".scale");
-
-  for (var i = 0; i < reveals.length; i++) {
-    var windowheight = window.innerHeight;
-    var revealtop = reveals[i].getBoundingClientRect().top;
-    var revealpoint = 200;
-
-    if (revealtop < windowheight - revealpoint) {
-      reveals[i].classList.add("active");
-    } else {
-      reveals[i].classList.remove("active");
-    }
-  }
-}
-
-window.addEventListener("scroll", zoom);
-
-function zoom() {
-  var reveals = document.querySelectorAll(".zoom");
 
   for (var i = 0; i < reveals.length; i++) {
     var windowheight = window.innerHeight;
