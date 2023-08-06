@@ -109,6 +109,7 @@ body {
   background-color: #070b13;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  width: 100%;
 }
 .cursor {
   z-index: -1;
