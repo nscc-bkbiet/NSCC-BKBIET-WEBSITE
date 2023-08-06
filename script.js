@@ -3,11 +3,6 @@ var body = document.querySelector("body");
 
 window.addEventListener("load", function () {
   loader.style.display = "none";
-  topArea.style.display = "block";
-});
-
-window.addEventListener("unload", function () {
-  body.style.display = "none";
 });
 
 const cursor = document.querySelector(".cursor");
