@@ -11,7 +11,7 @@ window.addEventListener("mousemove", (e) => {
   setTimeout(() => {
     cursor.style.left = e.pageX + "px";
     cursor.style.top = e.pageY + "px";
-  }, 40);
+  }, 10);
 });
 
 function myFunction() {
