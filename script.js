@@ -5,6 +5,12 @@ window.addEventListener("load", function () {
   loader.style.display = "none";
 });
 
+var click = document.querySelector(".click");
+
+click.addEventListener("click", function () {
+  loader.style.display = "none";
+});
+
 const cursor = document.querySelector(".cursor");
 
 window.addEventListener("mousemove", (e) => {
