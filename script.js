@@ -17,7 +17,19 @@ window.addEventListener("mousemove", (e) => {
   setTimeout(() => {
     cursor.style.left = e.pageX + "px";
     cursor.style.top = e.pageY + "px";
-  }, 10);
+  }, 30);
+});
+
+const show = document.querySelector(".connect");
+const contact = document.querySelector(".contactUs");
+const close = document.querySelector(".crossButton");
+
+show.addEventListener("click", function () {
+  contact.classList.remove("hidden");
+});
+
+close.addEventListener("click", function () {
+  contact.classList.add("hidden");
 });
 
 function myFunction() {
@@ -124,21 +136,3 @@ $(window).scroll(function (e) {
 
   $(".blurme").css("-webkit-filter", "blur(" + distanceScrolled / 60 + "px)");
 });
-
-// const showModel = document.querySelector(".icon");
-// const closeModel = document.querySelector(".close");
-// const model = document.querySelector(".model");
-// const overlay = document.querySelector(".overlay");
-
-// showModel.addEventListener("click", function () {
-//   model.classList.remove("hidden");
-//   overlay.classList.remove("hidden");
-// });
-// closeModel.addEventListener("click", function () {
-//   model.classList.add("hidden");
-//   overlay.classList.add("hidden");
-// });
-// overlay.addEventListener("click", function () {
-//   model.classList.add("hidden");
-//   overlay.classList.add("hidden");
-// });

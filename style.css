@@ -5,6 +5,9 @@
   scroll-behavior: smooth;
   font-family: "Handjet", cursive;
 }
+.hidden {
+  display: none !important;
+}
 .click {
   background: transparent;
   border: 0px;
@@ -80,38 +83,6 @@
     filter: blur(4px);
   }
 }
-
-/* .model {
-  width: 70vw;
-  height: 70vh;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: fixed;
-  background-color: pink;
-  color: #000;
-  z-index: 100;
-}
-.overlay {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  backdrop-filter: blur(100px);
-  z-index: 99;
-}
-.icon {
-  width: 30px;
-}
-.close {
-  cursor: pointer;
-  position: relative;
-  text-align: end;
-  padding: 30px;
-}
-.hidden {
-  display: none;
-} */
 
 html {
   scroll-behavior: smooth;
@@ -712,14 +683,41 @@ body {
     font-size: 55px;
   }
 }
-
+.cross {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  -webkit-text-fill-color: #fff !important;
+  cursor: pointer;
+  z-index: 20;
+}
+.cross button {
+  background: transparent;
+  border: 0px;
+  width: 100%;
+  font-size: 5rem;
+  font-family: "Courier New", Courier, monospace !important;
+  cursor: pointer;
+}
 .contactUs {
-  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: 100%;
+  z-index: 130;
+  backdrop-filter: blur(30px);
+  /* align-items: center; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .contactUs h1 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 6rem;
+  font-size: 4rem;
   background: linear-gradient(
     to right,
     #719de6,
@@ -731,7 +729,7 @@ body {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 0px !important;
   margin-bottom: 10px;
 }
 
