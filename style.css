@@ -731,7 +731,7 @@ body {
   -webkit-background-clip: text;
   text-align: center;
   /* margin-top: 0px !important; */
-  margin-top: 200px;
+  margin-top: 100px !important;
   margin-bottom: 10px;
 }
 
