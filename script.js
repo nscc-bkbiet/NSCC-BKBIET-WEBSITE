@@ -20,17 +20,17 @@ window.addEventListener("mousemove", (e) => {
   }, 30);
 });
 
-const show = document.querySelector(".connect");
-const contact = document.querySelector(".contactUs");
-const close = document.querySelector(".crossButton");
+// const show = document.querySelector(".connect");
+// const contact = document.querySelector(".contactUs");
+// const close = document.querySelector(".crossButton");
 
-show.addEventListener("click", function () {
-  contact.classList.remove("hidden");
-});
+// show.addEventListener("click", function () {
+//   contact.classList.remove("hidden");
+// });
 
-close.addEventListener("click", function () {
-  contact.classList.add("hidden");
-});
+// close.addEventListener("click", function () {
+//   contact.classList.add("hidden");
+// });
 
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
