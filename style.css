@@ -231,13 +231,13 @@ body {
 }
 
 .navbar {
+  z-index: 200;
   font-family: "Handjet", cursive;
   width: 100vw;
   padding: 15px;
   display: flex;
   justify-content: space-between;
   position: fixed;
-  z-index: 2;
   backdrop-filter: blur(5px);
 }
 .navbar section {
@@ -820,6 +820,7 @@ footer a {
   padding: 30px;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 .socialMedia {
   display: flex;
