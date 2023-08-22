@@ -9,31 +9,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Grandiflora+One&family=Rock+3D&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Bevan&family=Grandiflora+One&family=Handjet:wght@500&family=Inter&family=Poppins:wght@900&family=Press+Start+2P&family=Quicksand:wght@300&family=Rock+3D&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <link rel="tab icon" href="images/image-removebg-preview.webp" />
   </head>
 
   <body>
-    <div class="cursor"><img loading="lazy"  src="images/guy-fawkes-mask.webp" alt="" /></div>
-    <!-- <video autoplay class="mainBackgroundVideo" muted loop>
-      <source src="images/0719(1).mp4" type="video/mp4" />
-    </video> -->
     <video
       src="images/0719(1).mp4"
       autoplay
       loop
       muted
       id="mainBackgroundImage"
-      class="mainBackgroundImage"
-    ></video>
+      class="mainBackgroundImage"></video>
     <div class="navbar" id="navbar">
       <section>
-        <a href="index.html"><img loading="lazy"  src="images/image-removebg-preview.webp" /></a>
+        <a href="index.html"
+          ><img loading="lazy" src="images/image-removebg-preview.webp"
+        /></a>
         <div class="navbarOption">
           <a href="index.html">HOME</a>
           <a href="project.html">PROJECTS</a>
@@ -42,7 +37,6 @@
           <a href="gallery.html">GALLERY</a>
           <a href="resources.html">NSCC UPDATES</a>
           <a href="registration.html">REGISTRATION</a>
-          <!-- <a onclick="mode()" id="navbarOption8">MODE</a> -->
         </div>
         <div class="dropdown">
           <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
@@ -52,10 +46,8 @@
             colors="primary:#ffffff,secondary:#08a88a"
             style="width: 30px; height: 30px"
             class="dropbtn"
-            onclick="myFunction()"
-          >
+            onclick="myFunction()">
           </lord-icon>
-          <!-- <img loading="lazy"  src="images/menu.webp" onclick="myFunction()" class="dropbtn" /> -->
           <div id="myDropdown" class="dropdown-content">
             <a href="index.html">HOME</a>
             <a href="project.html">PROJECTS</a>
@@ -64,88 +56,18 @@
             <a href="gallery.html">Gallery</a>
             <a href="resources.html">NSCC UPDATES</a>
             <a href="registration.html">REGISTRATION</a>
-            <!-- <a onclick="mode()" id="navbarOption8">MODE</a> -->
           </div>
         </div>
       </section>
       <a href="index.html#contactUs"><button>Connect</button></a>
     </div>
-    <div class="registrationContainer">
-      <h1>REGISTRATION</h1>
-      <div class="registrationForm">
-        <form method="get" id="form">
-          <label for="name">
-            <input
-              type="text"
-              placeholder="Name*"
-              id="name"
-              class="name"
-              required
-            />
-          </label>
-          <label for="email">
-            <input
-              type="text"
-              placeholder="Email*"
-              id="email"
-              class="name"
-              required
-            />
-          </label>
-          <label for="phone">
-            <input
-              type="number"
-              id="phone"
-              class="name"
-              placeholder="Phone Number*"
-              required
-            />
-          </label>
-          <label for="phone">
-            <input
-              type="phone"
-              id="phone"
-              class="name"
-              placeholder="Roll No.*"
-              required
-            />
-          </label>
-          <label for="branch" class="branch" id="branch"
-            >Branch*
-            <select id="branchOption" name="option" required>
-              <option value="none">None</option>
-              <option value="cs">CS</option>
-              <option value="ds">DS</option>
-              <option value="ai">AI</option>
-              <option value="ece">ECE</option>
-              <option value="ee">EE</option>
-              <option value="it">IT</option>
-            </select>
-          </label>
-          <label for="branch" class="branch"
-            >Year*
-            <select id="branchOption" name="option" required>
-              <option value="none">None</option>
-              <option value="cs">1st</option>
-              <option value="ds">2nd</option>
-              <option value="ai">3rd</option>
-              <option value="ece">4th</option>
-            </select>
-          </label>
-          <button type="submit" id="submit" class="submit">Send</button>
-        </form>
-      </div>
+
+    <div class="eventImage">
+      <img src="images/events.jpg" />
+      <button class="registerBtn">Register</button>
     </div>
+
     <script>
-      const cursor = document.querySelector(".cursor");
-
-      window.addEventListener("mousemove", (e) => {
-        setTimeout(() => {
-          cursor.style.left = e.pageX + "px";
-          cursor.style.top = e.pageY + "px";
-        }, 10);
-      });
-
       function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
       }
@@ -176,5 +98,6 @@
         document.getElementById("branch").classList.toggle("wbranch");
       }
     </script>
+    <script src="registration.js"></script>
   </body>
 </html>
